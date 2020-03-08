@@ -25,7 +25,10 @@ name: Colorado
 url: https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub
 filter: xpath://hr/following-sibling::*/descendant-or-self::*,html2text
 ---
-# Connecticut - no data
+kind: url
+name: Connecticut
+url: https://portal.ct.gov/Coronavirus
+filter: xpath:/html/body/div[1]/div/div[2]/main/section[2]/div/div[2]/table/tbody/tr/td/ul,html2text
 ---
 kind: url
 name: Washington DC
