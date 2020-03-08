@@ -139,12 +139,6 @@ name: Montana
 url: https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt
 # Montana sticks all their data in an image. Just looking for updates on the whole page without the html filter to try to catch changes
 filter: element-by-id:dnn_mainPane
-# ---
-# ND data is embedded in a PowerBI dashboard/iframe :(
-# kind: url
-# name: North Dakota
-# url: https://app.powerbigov.us/view?r=eyJrIjoiMWQ1YjdmZjgtYWE3YS00YTg5LTk4NGEtMDE2NWY1ZWJkYWJmIiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
-# filter:
 ---
 kind: url
 name: Nebraska
@@ -180,6 +174,13 @@ kind: url
 name: North Carolina
 url: https://www.ncdhhs.gov/covid-19-case-count-north-carolina
 filter: css:#tablefield-0,html2text
+---
+# TODO: ND data is embedded in a PowerBI dashboard, creating SVGs
+# kind: browser
+# name: North Dakota
+# navigate: https://app.powerbigov.us/view?r=eyJrIjoiMWQ1YjdmZjgtYWE3YS00YTg5LTk4NGEtMDE2NWY1ZWJkYWJmIiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
+# url: https://app.powerbigov.us/view?r=eyJrIjoiMWQ1YjdmZjgtYWE3YS00YTg5LTk4NGEtMDE2NWY1ZWJkYWJmIiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
+# filter: xpath:/html/body//svg//*,html2text
 ---
 kind: url
 name: Ohio
