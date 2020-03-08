@@ -1,7 +1,7 @@
 kind: url
 name: Alaska
 url: http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx
-filter: css:div.box,html2text
+filter: css:#ctl00_PlaceHolderMain_PageContent__ControlWrapper_RichHtmlField > div.grid2 > div.box,html2text
 ---
 # Alamaba - no data
 ---
