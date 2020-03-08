@@ -184,3 +184,8 @@ filter: css:.odx-content-section table,html2text
 # TODO: remove the <sup> tags, possible options below
 # filter: css:.odx-content-section table *:not[sup],html2text
 # filter: xpath:/html/body/*/div[@class="odx-content"]/table/*[not(self::sup)],html2text
+---
+kind: url
+name: Oklahoma
+url: https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html
+filter: css:.cms_editor_content table.null,html2text
