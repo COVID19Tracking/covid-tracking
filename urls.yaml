@@ -3,7 +3,11 @@ name: Alaska
 url: http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx
 filter: css:#ctl00_PlaceHolderMain_PageContent__ControlWrapper_RichHtmlField > div.grid2 > div.box,html2text
 ---
-# Alamaba - no data
+kind: url
+name: Alabama
+url: https://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html
+ssl_no_verify: true
+filter: xpath:/html/body/div[1]/div[4]/div[1]/div[2]/div[2]/p[2],html2text
 ---
 kind: url
 name: Arkansas
