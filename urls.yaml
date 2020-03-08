@@ -171,3 +171,8 @@ kind: url
 name: Nevada
 url: http://dpbh.nv.gov/coronavirus/
 filter: css:table.table_general,html2text
+---
+kind: url
+name: New York
+url: https://www.health.ny.gov/diseases/communicable/coronavirus/
+filter: css:table#case_count_table,html2text
