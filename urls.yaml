@@ -242,3 +242,8 @@ name: Virginia
 url: http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/
 # TODO: In-depth dashboard pulling dynamic data here: https://vdhdata.vdh.virginia.gov/views/COVID-19inVirginia/External?:embed=y&:isGuestRedirectFromVizportal=y&:display_count=no&:showVizHome=no&:toolbar=no&:size=1024,1&:embed=y&:showVizHome=n&:jsdebug=y&:bootstrapWhenNotified=y&:tabs=n&:apiID=handler0
 filter: css:.so-widget-sow-editor ul li:first-child,html2text
+---
+kind: url
+name: Vermont
+url: https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus
+filter: css:.field-body table,html2text
