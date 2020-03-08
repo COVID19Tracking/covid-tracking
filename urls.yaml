@@ -95,7 +95,7 @@ filter: css:.main-content,html2text
 kind: url
 name: Massachusetts
 url: https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring
-filter: element-by-id:main-content,html2text
+filter: css:.ma__table--responsive table,html2text
 ---
 kind: url
 name: Maryland
