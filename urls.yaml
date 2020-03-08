@@ -203,12 +203,14 @@ kind: url
 name: Pennsylvania
 url: https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx
 filter: css:#ctl00_PlaceHolderMain_PageContent__ControlWrapper_RichHtmlField > ul li:contains("positive cases"),html2text
-# ---
-# TODO: Getting blocked by a redirect/user-agent flag
-# kind: url
-# name: Rhode Island
-# url: https://health.ri.gov/diseases/respiratory/?parm=163
-# filter: css:.master .large-9 > p:nth-child(2),html2text
+---
+kind: url
+name: Rhode Island
+url: https://health.ri.gov/diseases/respiratory/?parm=163
+filter: css:.large-9 .panel p + p,html2text
+# TODO: Better support open text, broken <p> tags in source
+headers:
+  User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 ---
 kind: url
 name: South Carolina
