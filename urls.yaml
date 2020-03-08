@@ -27,7 +27,7 @@ filter: css:.NewsItemContent div,grep:Pacific,html2text
 kind: url
 name: Colorado
 url: https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub
-filter: xpath://hr/following-sibling::*/descendant-or-self::*,html2text
+filter: css:#contents > table:first-of-type,html2text
 ---
 kind: url
 name: Connecticut
