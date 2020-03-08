@@ -139,5 +139,15 @@ filter: element-by-id:dnn_mainPane
 kind: url
 name: North Carolina
 url: https://www.ncdhhs.gov/covid-19-case-count-north-carolina
-# Montana sticks all their data in an image. Just looking for updates on the whole page without the html filter to try to catch changes
-filter: element-by-id:dnn_mainPane
+filter: css:#tablefield-0,html2text
+# ---
+# ND data is embedded in a PowerBI dashboard/iframe :(
+# kind: url
+# name: North Dakota
+# url: https://app.powerbigov.us/view?r=eyJrIjoiMWQ1YjdmZjgtYWE3YS00YTg5LTk4NGEtMDE2NWY1ZWJkYWJmIiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
+# filter:
+---
+kind: url
+name: Nebraska
+url: http://dhhs.ne.gov/Pages/Coronavirus.aspx
+filter: css:#ctl00_PlaceHolderMain_ctl08__ControlWrapper_RichHtmlField ul,html2text
