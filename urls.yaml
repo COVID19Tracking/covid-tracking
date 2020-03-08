@@ -139,11 +139,6 @@ name: Montana
 url: https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt
 # Montana sticks all their data in an image. Just looking for updates on the whole page without the html filter to try to catch changes
 filter: element-by-id:dnn_mainPane
----
-kind: url
-name: North Carolina
-url: https://www.ncdhhs.gov/covid-19-case-count-north-carolina
-filter: css:#tablefield-0,html2text
 # ---
 # ND data is embedded in a PowerBI dashboard/iframe :(
 # kind: url
@@ -180,6 +175,11 @@ kind: url
 name: New York
 url: https://www.health.ny.gov/diseases/communicable/coronavirus/
 filter: css:table#case_count_table,html2text
+---
+kind: url
+name: North Carolina
+url: https://www.ncdhhs.gov/covid-19-case-count-north-carolina
+filter: css:#tablefield-0,html2text
 ---
 kind: url
 name: Ohio
