@@ -85,7 +85,7 @@ filter: css:.left-content-large,html2text
 kind: url
 name: Kentucky
 url: https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx
-filter: css:.alert,html2text
+filter: css:#ctl00_ctl00_PlaceHolderContentFromChild_PlaceHolderContent_ctl01__ControlWrapper_RichHtmlField .alert-success,html2text
 ---
 kind: url
 name: Lousiana
@@ -98,14 +98,9 @@ url: https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring
 filter: element-by-id:main-content,html2text
 ---
 kind: url
-name: Maryland negative
-url: https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx#negative
-filter: grep:Number of negative,html2text
----
-kind: url
-name: Maryland positive
-url: https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx#positive
-filter: grep:Number of positive,html2text
+name: Maryland
+url: https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx
+filter: css:.ms-rteElement-H4:contains("COVID-19 Testing and Confirmed Case Counts in Maryland") ~ div
 ---
 kind: url
 name: Maine
@@ -143,4 +138,3 @@ name: North Carolina
 url: https://www.ncdhhs.gov/covid-19-case-count-north-carolina
 # Montana sticks all their data in an image. Just looking for updates on the whole page without the html filter to try to catch changes
 filter: element-by-id:dnn_mainPane
-
