@@ -252,3 +252,8 @@ kind: url
 name: Washington
 url: https://www.doh.wa.gov/Emergencies/Coronavirus
 filter: css:.row table,html2text
+---
+kind: url
+name: Wisconsin
+url: https://www.dhs.wisconsin.gov/outbreaks/index.htm
+filter: css:.single-column table,html2text
