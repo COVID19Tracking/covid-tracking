@@ -193,3 +193,8 @@ kind: url
 name: Oklahoma
 url: https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html
 filter: css:.cms_editor_content table.null,html2text
+---
+kind: url
+name: Oregon
+url: https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx
+filter: css:.or-accordion-content-field .ews-table:nth-child(2),html2text
