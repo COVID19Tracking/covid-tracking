@@ -166,3 +166,8 @@ kind: url
 name: New Mexico
 url: https://cv.nmhealth.org/
 filter: css:.et_pb_column_1 .et_pb_text_1 .et_pb_text_inner,html2text
+---
+kind: url
+name: Nevada
+url: http://dpbh.nv.gov/coronavirus/
+filter: css:table.table_general,html2text
