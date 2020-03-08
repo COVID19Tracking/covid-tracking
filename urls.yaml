@@ -184,10 +184,9 @@ filter: css:#tablefield-0,html2text
 kind: url
 name: Ohio
 url: https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/
-filter: css:.odx-content-section table,html2text
-# TODO: remove the <sup> tags, possible options below
-# filter: css:.odx-content-section table *:not[sup],html2text
-# filter: xpath:/html/body/*/div[@class="odx-content"]/table/*[not(self::sup)],html2text
+# Alternate CSS-based filter, includes <sup>
+# filter: css:.odx-content-section table,html2text
+filter: xpath:/html/body//table//text()[not(ancestor::sup)],html2text
 ---
 kind: url
 name: Oklahoma
@@ -226,18 +225,17 @@ kind: url
 name: Tennessee
 url: https://www.tn.gov/health/cedep/ncov.html
 filter: css:.textimage-text p:nth-child(3),html2text
-# ---
-# TODO: Getting 443, invalid SSL: sl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:749)
+---
 kind: url
 name: Texas
 url: https://dshs.texas.gov/coronavirus/
 filter: css:table[summary="Texas COVID-19 Cases"],html2text
 ssl_no_verify: true
 ---
-# TODO: No data yet
+# TODO: No data yet, looks like a blog post template
 # kind: url
 # name: Utah
-# url: https://coronavirus.utah.gov/
+# url: https://coronavirus.utah.gov/coronavirus-latest-information/
 # filter: css:*,html2text
 ---
 kind: url
