@@ -136,5 +136,4 @@ filter: element-by-id:dnn_mainPane
 kind: url
 name: North Carolina
 url: https://www.ncdhhs.gov/covid-19-case-count-north-carolina
-# Montana sticks all their data in an image. Just looking for updates on the whole page without the html filter to try to catch changes
-filter: element-by-id:dnn_mainPane
+filter: css:#tablefield-0,html2text
