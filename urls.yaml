@@ -206,9 +206,10 @@ filter: css:#ctl00_PlaceHolderMain_PageContent__ControlWrapper_RichHtmlField > u
 ---
 kind: url
 name: Rhode Island
-url: https://health.ri.gov/diseases/respiratory/?parm=163
-filter: css:.large-9 .panel p + p,html2text
-# TODO: Better support open text, broken <p> tags in source
+# this is the underlying spreadsheet backing the table on https://health.ri.gov/data/covid-19/, returning json formatted data
+url: https://docs.google.com/spreadsheet/tq?key=1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q&headers=0&range=A2%3AB5&gid=0
+# filter out the JSONP function call to get just the data object
+filter: re.sub:\/\*O_o\*\/,re.sub:google.visualization.Query.setResponse\(,re.sub:\);$,format-json
 headers:
   User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 ---
