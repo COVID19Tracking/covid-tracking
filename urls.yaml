@@ -239,8 +239,8 @@ ssl_no_verify: true
 # TODO: Only one case so far, looks like a blog post template
 kind: url
 name: Utah
-url: https://coronavirus.utah.gov/coronavirus-latest-information/
-filter: css:.entry-content,html2text
+url: https://coronavirus.utah.gov/latest/
+filter: css:.e272-20,html2text
 ---
 kind: url
 name: Virginia
