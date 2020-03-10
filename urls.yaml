@@ -140,7 +140,7 @@ kind: url
 name: Montana
 url: https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt
 # Montana sticks all their data in an image. Just looking for updates on the whole page without the html filter to try to catch changes
-filter: element-by-id:dnn_mainPane
+filter: element-by-id:dnn_mainPane,html2text
 ---
 kind: url
 name: Nebraska
