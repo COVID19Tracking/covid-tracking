@@ -240,7 +240,7 @@ ssl_no_verify: true
 kind: url
 name: Utah
 url: https://coronavirus.utah.gov/latest/
-filter: css:.x-row-inner > div:contains("What's Happening"):contains("Utah"),html2text
+filter: css:.x-col:contains("What’s Happening"):contains("Utah"):first-child,html2text
 ---
 kind: url
 name: Virginia
