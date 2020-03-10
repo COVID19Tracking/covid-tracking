@@ -83,7 +83,7 @@ kind: url
 name: Indiana
 url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=0%3D0&outFields=%2A&f=json
 # This grabs the JSON used to render the arcgis maps/tables. Relevant data is in the "features" attribute
-filter: format-json
+filter: format-indiana
 ---
 kind: url
 name: Kansas
