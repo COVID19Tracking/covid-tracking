@@ -78,12 +78,19 @@ kind: url
 name: Illinois
 url: http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus
 filter: css:dd table,html2text
+# ---
+# Disabled until urlwatch package is updated on server
+# kind: url
+# name: Indiana
+# url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=0%3D0&outFields=%2A&f=json
+# # This grabs the JSON used to render the arcgis maps/tables. Relevant data is in the "features" attribute
+# filter: format-indiana
 ---
 kind: url
 name: Indiana
-url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=0%3D0&outFields=%2A&f=json
-# This grabs the JSON used to render the arcgis maps/tables. Relevant data is in the "features" attribute
-filter: format-indiana
+url: https://www.in.gov/isdh/28470.htm
+# no structured data here, just report when any part of the page changes
+filter: css:.subpage-text-inner,html2text
 ---
 kind: url
 name: Kansas
@@ -189,7 +196,7 @@ name: Ohio
 url: https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/
 # Alternate CSS-based filter, includes <sup>
 # filter: css:.odx-content-section table,html2text
-filter: xpath:/html/body//table//text()[not(ancestor::sup)],html2text
+filter: css:.odh-ads__container .odh-ads__items,html2text
 ---
 kind: url
 name: Oklahoma
