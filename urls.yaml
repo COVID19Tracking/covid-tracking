@@ -240,7 +240,7 @@ filter: css:.textimage-text p:nth-child(3),html2text
 ---
 kind: url
 name: Texas
-url: https://dshs.texas.gov/coronavirus/
+url: https://dshs.texas.gov/news/updates.shtm#coronavirus
 filter: css:table[summary="Texas COVID-19 Cases"],html2text
 ssl_no_verify: true
 ---
