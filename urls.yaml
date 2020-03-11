@@ -42,7 +42,7 @@ filter: element-by-id:block-system-main,html2text
 kind: url
 name: Delaware
 url: https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html
-filter: css:.row:contains("Confirmed Cases of coronavirus disease"),html2text
+filter: css:table:contains("People Under Investigation"),html2text
 ---
 kind: url
 name: Florida
