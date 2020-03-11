@@ -106,7 +106,7 @@ filter: css:#ctl00_ctl00_PlaceHolderContentFromChild_PlaceHolderContent_ctl01__C
 kind: url
 name: Lousiana
 url: http://ldh.la.gov/index.cfm/page/3835
-filter: css:.main-content,html2text
+filter: css:.main-content p > strong,html2text
 ---
 kind: url
 name: Massachusetts
