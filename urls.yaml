@@ -186,7 +186,7 @@ filter: css:#tablefield-0,html2text
 ---
 kind: browser
 name: North Dakota
-navigate: https://app.powerbigov.us/view?r=eyJrIjoiMWQ1YjdmZjgtYWE3YS00YTg5LTk4NGEtMDE2NWY1ZWJkYWJmIiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
+navigate: https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
 options:
   waitUntil: networkidle2
 filter: css:.setFocusRing,html2text
