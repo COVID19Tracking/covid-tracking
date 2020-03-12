@@ -110,8 +110,8 @@ filter: css:.main-content table,html2text
 ---
 kind: url
 name: Massachusetts
-url: https://www.mass.gov/doc/covid-19-cases-in-massachusetts/download
-filter: sha1sum
+url: https://www.mass.gov/info-details/covid-19-cases-quarantine-and-monitoring
+filter: css:table,html2text
 ---
 kind: url
 name: Maryland
