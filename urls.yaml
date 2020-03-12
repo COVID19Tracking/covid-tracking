@@ -72,7 +72,7 @@ filter: css:.covid-19-report_container,html2text
 kind: url
 name: Idaho
 url: https://coronavirus.idaho.gov/
-filter: element-by-id:primary,html2text
+filter: css:.wp-block-table,html2text
 ---
 kind: url
 name: Illinois
