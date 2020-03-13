@@ -182,8 +182,8 @@ filter: css:table#case_count_table,html2text
 ---
 kind: url
 name: North Carolina
-url: https://www.ncdhhs.gov/covid-19-case-count-north-carolina
-filter: css:#tablefield-0,html2text
+url: https://www.ncdhhs.gov/covid-19-case-count-nc
+filter: css:table,html2text
 ---
 kind: browser
 name: North Dakota
