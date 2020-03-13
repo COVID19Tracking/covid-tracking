@@ -264,24 +264,20 @@ name: Vermont
 url: https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus
 filter: css:.field-body table,html2text
 ---
-kind: browser
+kind: url
 name: Washington
-navigate: https://www.doh.wa.gov/Emergencies/Coronavirus
+url: https://covid-gate-passer.joshellington.com/?url=https://www.doh.wa.gov/Emergencies/Coronavirus
 filter: css:.row table,html2text
-options:
-  waitFor: 5000
 ---
 kind: url
 name: Wisconsin
 url: https://www.dhs.wisconsin.gov/outbreaks/index.htm
 filter: css:.single-column table,html2text
 ---
-kind: browser
+kind: url
 name: West Virginia
-navigate: https://dhhr.wv.gov/COVID-19/Pages/default.aspx
+url: https://covid-gate-passer.joshellington.com/?url=https://dhhr.wv.gov/COVID-19/Pages/default.aspx
 filter: css:.bluebkg table,html2text
-options:
-  waitFor: 5000
 ---
 kind: url
 name: Wyoming
