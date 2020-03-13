@@ -269,7 +269,7 @@ name: Washington
 navigate: https://www.doh.wa.gov/Emergencies/Coronavirus
 filter: css:.row table,html2text
 options:
-  waitFor: 2000
+  waitFor: 5000
 ---
 kind: url
 name: Wisconsin
@@ -281,7 +281,7 @@ name: West Virginia
 navigate: https://dhhr.wv.gov/COVID-19/Pages/default.aspx
 filter: css:.bluebkg table,html2text
 options:
-  waitFor: 2000
+  waitFor: 5000
 ---
 kind: url
 name: Wyoming
