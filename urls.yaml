@@ -57,7 +57,7 @@ filter: css:table,html2text
 kind: url
 name: Hawaii
 url: https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/
-filter: css:.primary-content,html2text
+filter: css:.advisory_content p:nth-child(2) > strong,html2text
 ---
 kind: url
 name: Iowa
