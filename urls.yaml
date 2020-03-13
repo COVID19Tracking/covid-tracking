@@ -248,7 +248,7 @@ ssl_no_verify: true
 kind: url
 name: Utah
 url: https://coronavirus.utah.gov/latest/
-filter: css:.x-col:contains("What’s Happening"):contains("Utah"):first-child,html2text
+filter: css:.x-row-inner:contains("Confirmed cases by health district"),html2text
 ---
 # TODO: Moved to Tableau
 # kind: browser
