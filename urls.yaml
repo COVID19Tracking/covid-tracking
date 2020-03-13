@@ -7,7 +7,7 @@ kind: url
 name: Alabama
 url: http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html
 ssl_no_verify: true
-filter: css:h2:contains("Cases and Testing") ~ p,html2text
+filter: css:.mainContent table,html2text
 ---
 kind: url
 name: Arkansas
