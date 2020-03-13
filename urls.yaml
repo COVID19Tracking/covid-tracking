@@ -49,10 +49,10 @@ name: Florida
 url: http://www.floridahealth.gov/diseases-and-conditions/COVID-19/
 filter: css:.wysiwyg_content,html2text
 ---
-kind: url
+kind: browser
 name: Georgia
-url: https://dph.georgia.gov/
-filter: css:.card-wrapper--embed .text-block:contains("COVID-19 Cases in Georgia"),html2text
+navigate: https://sendss.state.ga.us/ncov/statusrep.html
+filter: css:table,html2text
 ---
 kind: url
 name: Hawaii
