@@ -136,12 +136,13 @@ filter: css:table,html2text
 kind: url
 name: Missouri
 url: https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/
+# TODO: Pull from PowerBI
 filter: element-by-id:main-content,html2text
 ---
 kind: url
 name: Mississippi
 url: https://msdh.ms.gov/msdhsite/_static/14,0,420.html
-filter: css:div:contains("Mississippi cases"),html2text
+filter: css:.msdh .shadedBlue,html2text
 ---
 kind: url
 name: Montana
