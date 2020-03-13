@@ -32,7 +32,7 @@ filter: css:#contents > table:first-of-type,html2text
 kind: url
 name: Connecticut
 url: https://portal.ct.gov/Coronavirus
-filter: xpath:/html/body/div[1]/div/div[2]/main/section[2]/div/div[2]/table/tbody/tr/td/ul,html2text
+filter: css:table,html2text
 ---
 kind: url
 name: Washington DC
@@ -250,11 +250,13 @@ name: Utah
 url: https://coronavirus.utah.gov/latest/
 filter: css:.x-col:contains("What’s Happening"):contains("Utah"):first-child,html2text
 ---
-kind: url
-name: Virginia
-url: http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/
-# TODO: In-depth dashboard pulling dynamic data here: https://vdhdata.vdh.virginia.gov/views/COVID-19inVirginia/External?:embed=y&:isGuestRedirectFromVizportal=y&:display_count=no&:showVizHome=no&:toolbar=no&:size=1024,1&:embed=y&:showVizHome=n&:jsdebug=y&:bootstrapWhenNotified=y&:tabs=n&:apiID=handler0
-filter: css:.so-widget-sow-editor ul li:first-child,html2text
+# TODO: Moved to Tableau
+# kind: browser
+# kind: url
+# name: Virginia
+# url: http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/
+# # navigate: https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
+# filter: css:*,html2text
 ---
 kind: url
 name: Vermont
