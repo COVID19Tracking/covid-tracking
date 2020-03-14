@@ -225,7 +225,7 @@ filter: css:.or-accordion-content-field .ews-table:nth-child(2),html2text
 kind: url
 name: Pennsylvania
 url: https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx
-filter: css:#ctl00_PlaceHolderMain_PageContent__ControlWrapper_RichHtmlField > ul li:contains("positive cases"),html2text
+filter: css:.content-zone table,html2text
 ---
 kind: url
 name: Rhode Island
