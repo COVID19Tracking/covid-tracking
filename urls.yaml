@@ -254,10 +254,9 @@ name: Utah
 url: https://coronavirus.utah.gov/latest/
 filter: css:.x-row-inner:contains("Confirmed cases by health district"),html2text
 ---
-# TODO: Moved to Tableau
-# kind: browser
-# kind: url
-# name: Virginia
+kind: url
+name: Virginia
+url: http://covid19-api.exemplartech.com/github-data/captive-browser/va_tableau.html
 # url: http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/
 # # navigate: https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
 # filter: css:*,html2text
