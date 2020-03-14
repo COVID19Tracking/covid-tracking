@@ -54,7 +54,7 @@ filter: css:.wysiwyg_content,html2text
 ---
 kind: browser
 name: Georgia
-navigate: https://sendss.state.ga.us/ncov/statusrep.html
+navigate: https://sendss.state.ga.us/ncov/obsummary
 filter: css:table,html2text
 ---
 kind: url
