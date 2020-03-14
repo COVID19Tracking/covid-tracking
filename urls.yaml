@@ -111,8 +111,8 @@ filter: css:#ctl00_ctl00_PlaceHolderContentFromChild_PlaceHolderContent_ctl01__C
 ---
 kind: url
 name: Louisiana
-url: http://ldh.la.gov/Coronavirus/
-filter: css:table:contains("Parish"),html2text
+url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/State_Capitol_4/FeatureServer/0/query?f=html&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=50&cacheHint=true
+filter: css:table.ftrTable,html2text
 ---
 kind: url
 name: Massachusetts
