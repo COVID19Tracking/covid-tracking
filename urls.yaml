@@ -226,15 +226,21 @@ kind: url
 name: Pennsylvania
 url: https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx
 filter: css:.content-zone table,html2text
+# ---
+# NOTE: Disabling harder-to-human-parse JSON feed for direct query param'd Sheet parsing
+# kind: url
+# name: Rhode Island
+# # this is the underlying spreadsheet backing the table on https://health.ri.gov/data/covid-19/, returning json formatted data
+# url: https://docs.google.com/spreadsheet/tq?key=1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q&headers=0&range=A2%3AB5&gid=0
+# # filter out the JSONP function call to get just the data object
+# filter: re.sub:\/\*O_o\*\/,re.sub:google.visualization.Query.setResponse\(,re.sub:\);$,format-json
+# headers:
+#   User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 ---
 kind: url
 name: Rhode Island
-# this is the underlying spreadsheet backing the table on https://health.ri.gov/data/covid-19/, returning json formatted data
-url: https://docs.google.com/spreadsheet/tq?key=1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q&headers=0&range=A2%3AB5&gid=0
-# filter out the JSONP function call to get just the data object
-filter: re.sub:\/\*O_o\*\/,re.sub:google.visualization.Query.setResponse\(,re.sub:\);$,format-json
-headers:
-  User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+url: https://docs.google.com/spreadsheets/d/1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q/edit?rm=minimal&chrome=false&ui=1&output=html#gid=0
+filter: css:tbody td,html2text
 ---
 kind: url
 name: South Carolina
