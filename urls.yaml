@@ -143,11 +143,11 @@ kind: url
 name: Missouri
 url: https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/
 filter: element-by-id:main-content,html2text
----
+#---
 # PowerBI so get an image
-kind: url
-name: Missouri2
-url: http://covid19-api.exemplartech.com/github-data/captive-browser/mo_power_bi.html
+#kind: url
+#name: Missouri2
+#url: http://covid19-api.exemplartech.com/github-data/captive-browser/mo_power_bi.html
 ---
 kind: url
 name: Mississippi
