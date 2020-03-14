@@ -13,11 +13,13 @@ kind: url
 name: Arkansas
 url: https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus
 filter: xpath:/html/body/div[7]/div[1]/table,html2text
----
-kind: browser
-name: Arizona
-navigate: https://tableau.azdhs.gov/views/COVID-19Table/COVID-19table?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Ftableau.azdhs.gov%2F&:embed_code_version=3&:tabs=no&:toolbar=no&:showAppBanner=false&:display_spinner=no&iframeSizedToWindow=true&:loadOrderID=0
-filter: css:.tab-dashboard,html2text
+# ---
+# kind: url
+# name: Arizona
+# url: https://covid-gate-passer.joshellington.com/?url=https://tableau.azdhs.gov/vizql/w/COVID-19Dashboard/v/COVID-19table/viewData/sessions/5554D2F1779C4BF3849C16FB6BA78AAB-1:0/views/8275719771277684273_2738315765867498942?maxrows=200&viz=%7B%22worksheet%22%3A%22Testing%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D
+# # url: https://covid-gate-passer.joshellington.com/?url=https://tableau.azdhs.gov/vizql/w/COVID-19Dashboard/v/COVID-19table/viewData/sessions/2E4F765868C540BEBD3CC634AC0A8E54-1:3/views/8275719771277684273_133021235305994309?maxrows=200&viz=%7B%22worksheet%22%3A%22Total%20and%20deaths%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D
+# filter: css:table.datatable,html2text
+# # filter: css:div.tabContent-panel-underlying table,html2text
 ---
 kind: url
 name: California
