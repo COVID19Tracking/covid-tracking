@@ -214,8 +214,8 @@ filter: css:.odh-ads__container .odh-ads__items,html2text
 ---
 kind: url
 name: Oklahoma
-url: https://www.ok.gov/health/Prevention_and_Preparedness/Acute_Disease_Service/Disease_Information/Coronavirus_Disease_2019/Oklahoma_Response_to_Coronavirus_Disease_2019/index.html
-filter: css:.cms_editor_content table.null,html2text
+url: https://coronavirus.health.ok.gov/
+filter: css:table,html2text
 ---
 kind: url
 name: Oregon
