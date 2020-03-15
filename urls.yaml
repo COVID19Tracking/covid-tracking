@@ -197,13 +197,10 @@ name: North Carolina
 url: https://www.ncdhhs.gov/covid-19-case-count-nc
 filter: css:table,html2text
 ---
-kind: browser
+kind: url
 name: North Dakota
-navigate: https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
-options:
-  waitUntil: networkidle2
+url: https://covid-gate-passer.joshellington.com/?url=https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
 filter: css:.setFocusRing,html2text
-
 ---
 kind: url
 name: Ohio
