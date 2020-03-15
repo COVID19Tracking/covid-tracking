@@ -64,12 +64,8 @@ filter: css:.advisory_content p:nth-child(2) > strong,html2text
 ---
 kind: url
 name: Iowa
-url: https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
-headers:
-  # TODO: cookie value is IP-generated :(
-  Cookie: incap_ses_139_1740760=EyPxJfy56A/miAiIFdntAXn3Zl4AAAAAGfu6/Q6XVYYC6G0CizMl8w==
-  Cookie: incap_ses_624_953578=5GlXd4V4KRLvYTnhFeaoCJj3Zl4AAAAAeQdrTf420wgNutQK3ts7LQ==
-filter: css:.covid-19-report_container,html2text
+url: https://covid-gate-passer.joshellington.com?url=https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
+filter: css:table,html2text
 # filter: css:*
 ---
 kind: url
