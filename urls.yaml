@@ -118,7 +118,7 @@ filter: css:table,html2text
 ---
 kind: url
 name: Maryland
-url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/COVID19_MD_CountyCaseCounts/FeatureServer/0/query?where=COVID19Cases%3C%3E0&returnGeometry=false&outFields=County,COVID19Cases
+url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/COVID19_MD_CountyCaseCounts_DEMO/FeatureServer/0/query?where=COVID19Cases%3C%3E0&returnGeometry=false&outFields=County,COVID19Cases
 filter: css:.ftrTable,html2text
 ---
 kind: url
