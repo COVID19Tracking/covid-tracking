@@ -60,7 +60,7 @@ filter: css:table,html2text
 kind: url
 name: Hawaii
 url: https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/
-filter: css:.advisory_content p:nth-child(2) > strong,html2text
+filter: css:.advisory_content p:contains("Cases in Hawaii") ~ p,html2text,strip
 ---
 kind: url
 name: Iowa
