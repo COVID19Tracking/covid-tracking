@@ -294,3 +294,9 @@ kind: url
 name: Wyoming
 url: https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/
 filter: css:.et_pb_column_1 .et_pb_text_inner,html2text
+---
+kind: url
+name: Virgin Islands
+url: https://doh.vi.gov/
+filter: css:.page-content-sidebar .block:contains("COVID19"),html2text,strip
+---
