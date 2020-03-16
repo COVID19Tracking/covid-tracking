@@ -64,7 +64,8 @@ filter: css:.advisory_content p:nth-child(2) > strong,html2text
 ---
 kind: url
 name: Iowa
-url: https://covid-gate-passer.joshellington.com?url=https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
+# url: https://covid-gate-passer.joshellington.com?url=https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl:%22https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus%22,renderType:%22html%22%7D
 filter: css:table,html2text
 # filter: css:*
 ---
