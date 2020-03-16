@@ -99,7 +99,7 @@ kind: url
 name: Kansas
 url: http://www.kdheks.gov/coronavirus/
 # Kansas put some data in a date-specific PDF file which isn't really helpful, detecting any updates to the resource page
-filter: css:.left-content-large,html2text
+filter: css:a:contains("COVID-19 Public Update")
 ---
 kind: url
 name: Kentucky
