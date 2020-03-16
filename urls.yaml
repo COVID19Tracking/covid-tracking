@@ -166,8 +166,8 @@ filter: css:#ctl00_PlaceHolderMain_ctl08__ControlWrapper_RichHtmlField ul,html2t
 ---
 kind: url
 name: New Hampshire
-url: https://www.dhhs.nh.gov/dphs/cdcs/2019-ncov.htm
-filter: css:table.dataTable,html2text
+url: https://www.nh.gov/covid19/
+filter: css:table,html2text,strip
 ---
 kind: url
 name: New Jersey
