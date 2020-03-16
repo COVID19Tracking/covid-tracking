@@ -50,7 +50,7 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Florida
 url: http://www.floridahealth.gov/diseases-and-conditions/COVID-19/
-filter: css:.wysiwyg_content,html2text
+filter: css:table,html2text,strip
 ---
 kind: browser
 name: Georgia
