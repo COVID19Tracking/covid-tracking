@@ -300,3 +300,8 @@ name: Virgin Islands
 url: https://doh.vi.gov/
 filter: css:.page-content-sidebar .block:contains("COVID19"),html2text,strip
 ---
+kind: url
+name: Commonwealth of the Northern Mariana Islands
+url: https://www.chcc.gov.mp/coronavirusinformation.php
+filter: css:.bannerback,html2text
+---
