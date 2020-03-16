@@ -44,8 +44,8 @@ filter: element-by-id:block-system-main,html2text
 ---
 kind: url
 name: Delaware
-url: https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html
-filter: css:table:contains("Reported Cases of COVID-19 in Delaware"),html2text
+url: https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_View/FeatureServer/0/query?where=(NAME%20%3D%20%27Kent%27)%20OR%20(NAME%20%3D%20%27New%20Castle%27)%20OR%20(NAME%20%3D%20%27Sussex%27)&returnGeometry=false&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Presumptive_Positive%22%2C%22outStatisticFieldName%22%3A%22Presumptive_Positive%22%7D%5D&outFields=%2A
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Florida
