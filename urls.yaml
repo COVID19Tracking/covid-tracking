@@ -276,7 +276,8 @@ filter: css:.field-body table,html2text
 ---
 kind: url
 name: Washington
-url: https://covid-gate-passer.joshellington.com/?url=https://www.doh.wa.gov/Emergencies/Coronavirus
+# url: https://covid-gate-passer.joshellington.com/?url=https://www.doh.wa.gov/Emergencies/Coronavirus
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl:%22https://www.doh.wa.gov/Emergencies/Coronavirus%22,renderType:%22html%22%7D
 filter: css:.row table,html2text
 ---
 kind: url
