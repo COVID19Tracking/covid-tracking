@@ -294,11 +294,12 @@ kind: url
 name: Wyoming
 url: https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/
 filter: css:.et_pb_column_1 .et_pb_text_inner,html2text
----
-kind: url
-name: Virgin Islands
-url: https://doh.vi.gov/
-filter: css:.page-content-sidebar .block:contains("COVID19"),html2text,strip
+# NOTE: AS placeholder
+# ---
+# kind: url
+# name: America Samoa
+# url: https://www.facebook.com/amsamgov/
+# filter: css:*,html2text,strip
 ---
 kind: url
 name: Commonwealth of the Northern Mariana Islands
@@ -309,3 +310,8 @@ kind: url
 name: Guam
 url: https://ghs.guam.gov/coronavirus-covid-19
 filter: css:.Blog .row:nth-child(1) .post-content,html2text,strip
+---
+kind: url
+name: Virgin Islands
+url: https://doh.vi.gov/
+filter: css:.page-content-sidebar .block:contains("COVID19"),html2text,strip
