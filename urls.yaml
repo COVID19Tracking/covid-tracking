@@ -238,13 +238,13 @@ filter: css:tbody td,html2text
 ---
 kind: url
 name: South Carolina
-url: https://scdhec.gov/health/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19
-filter: css:main table,html2text
+url: https://scdhec.gov/index.php/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19
+filter: css:table:contains("Negative tests"),html2text
 ---
 kind: url
 name: South Dakota
-url: https://scdhec.gov/index.php/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/monitoring-testing-covid-19
-filter: css:table:contains("Negative tests"),html2text
+url: https://doh.sd.gov/news/Coronavirus.aspx
+filter: css:table.MsoTableGrid,html2text
 ---
 kind: url
 name: Tennessee
