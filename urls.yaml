@@ -97,9 +97,9 @@ filter: css:.ftrTable,html2text
 ---
 kind: url
 name: Kansas
-url: http://www.kdheks.gov/coronavirus/
+url: https://govstatus.egov.com/coronavirus
 # Kansas put some data in a date-specific PDF file which isn't really helpful, detecting any updates to the resource page
-filter: css:a:contains("COVID-19 Public Update")
+filter: css:p:contains("Confirmed Positive"),html2text
 ---
 kind: url
 name: Kentucky
