@@ -212,7 +212,7 @@ filter: css:.or-accordion-content-field .ews-table,html2text,strip
 ---
 kind: url
 name: Pennsylvania
-url: https://www.health.pa.gov/topics/disease/Pages/Coronavirus.aspx
+url: https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx
 filter: css:table:contains("Negative"),html2text
 # ---
 # NOTE: Disabling harder-to-human-parse JSON feed for direct query param'd Sheet parsing
