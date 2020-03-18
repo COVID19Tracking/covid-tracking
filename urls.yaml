@@ -64,10 +64,8 @@ filter: css:.advisory_content p:contains("Cases in Hawaii") ~ p,html2text,strip
 ---
 kind: url
 name: Iowa
-# url: https://covid-gate-passer.joshellington.com?url=https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl:%22https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus%22,renderType:%22html%22%7D
 filter: css:table,html2text
-# filter: css:*
 ---
 kind: url
 name: Idaho
@@ -98,7 +96,6 @@ filter: css:.ftrTable,html2text
 kind: url
 name: Kansas
 url: https://govstatus.egov.com/coronavirus
-# Kansas put some data in a date-specific PDF file which isn't really helpful, detecting any updates to the resource page
 filter: css:p:contains("Confirmed Positive"),html2text
 ---
 kind: url
@@ -154,9 +151,6 @@ filter: css:.msdh .shadedBlue,html2text
 kind: url
 name: Montana
 url: https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt
-# Montana sticks all their data in an image. Just looking for updates on the whole page without the html filter to try to catch changes
-# the comment above appears to be out-of-date. it has a nice table - Josh
-#filter: element-by-id:dnn_mainPane,html2text
 filter: css:.fluid-container,html2text
 ---
 kind: url
@@ -257,7 +251,6 @@ url: https://dshs.texas.gov/news/updates.shtm#coronavirus
 filter: css:table[summary~="COVID-19"],html2text
 ssl_no_verify: true
 ---
-# TODO: Only one case so far, looks like a blog post template
 kind: url
 name: Utah
 url: https://coronavirus.utah.gov/latest/
