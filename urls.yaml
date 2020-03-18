@@ -129,7 +129,7 @@ filter: css:.article > table:nth-child(6),html2text,strip
 kind: url
 name: Michigan
 url: https://www.michigan.gov/coronavirus
-filter: element-by-id:comp_114411,html2text
+filter: css:div:contains("MICHIGAN DATA"),html2text
 ---
 kind: url
 name: Minnesota
