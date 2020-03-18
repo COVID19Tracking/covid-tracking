@@ -277,7 +277,6 @@ filter: css:.field-body table,html2text
 ---
 kind: url
 name: Washington
-# url: https://covid-gate-passer.joshellington.com/?url=https://www.doh.wa.gov/Emergencies/Coronavirus
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:%22https://www.doh.wa.gov/Emergencies/Coronavirus%22,renderType:%22html%22,%22requestSettings%22:{%22doneWhen%22:%20[{%22selector%22:%22table%22}]}}
 filter: css:.row table,html2text
 ---
@@ -288,7 +287,7 @@ filter: css:.single-column table,html2text
 ---
 kind: url
 name: West Virginia
-url: https://covid-gate-passer.joshellington.com/?url=https://dhhr.wv.gov/COVID-19/Pages/default.aspx
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fdhhr.wv.gov%2FCOVID-19%2FPages%2Fdefault.aspx%27%2C%20renderType%3A%20%27html%27%7D
 filter: css:.bluebkg table,html2text
 ---
 kind: url
