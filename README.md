@@ -1,6 +1,10 @@
 # covid-tracking
 Tracking state test counts. Posting diff changes every ~30mins to #urlwatch in COVID-Tracking.
 
+## Installation
+
+- To install the fork of urlwatch: `pip install git+https://github.com/COVID19Tracking/urlwatch.git`
+
 ## urls.yaml
 This is a config file for [urlwatch](https://github.com/thp/urlwatch) to detect changes to health department pages (see [list here](https://docs.google.com/spreadsheets/d/18oVRrHj3c183mHmq3m89_163yuYltLNlOmPerQ18E8w/edit#gid=207813168)) and report them to a Slack channel for further analysis.
 
