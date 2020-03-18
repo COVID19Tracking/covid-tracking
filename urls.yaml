@@ -52,10 +52,10 @@ name: Florida
 url: http://www.floridahealth.gov/diseases-and-conditions/COVID-19/
 filter: css:table,html2text,strip
 ---
-kind: browser
+kind: url
 name: Georgia
-navigate: https://sendss.state.ga.us/ncov/obsummary
-filter: css:table,html2text
+url: https://dph.georgia.gov/covid-19-daily-status-report
+filter: css:table.stacked-row-plus,html2text,strip
 ---
 kind: url
 name: Hawaii
