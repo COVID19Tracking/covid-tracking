@@ -136,7 +136,7 @@ filter: css:ul:contains("patients tested"),html2text
 kind: url
 name: Missouri
 url: https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/
-filter: element-by-id:main-content,html2text
+filter: css:table,html2text,strip
 #---
 # PowerBI so get an image
 #kind: url
