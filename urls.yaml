@@ -29,8 +29,10 @@ filter: css:.NewsItemContent p:contains("there are a total of"),html2text
 ---
 kind: url
 name: Colorado
-url: https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub
-filter: css:#contents > table:first-of-type ul:first-of-type,html2text
+url: https://services3.arcgis.com/66aUo8zsujfVXRIT/ArcGIS/rest/services/Cases_by_County/FeatureServer/0/query?objectIds=1&outFields=State_Number_Positive_Cases_Tot&f=html&returnGeometry=false
+filter: css:.ftrTable,html2text
+#url: https://docs.google.com/document/d/e/2PACX-1vRSxDeeJEaDxir0cCd9Sfji8ZPKzNaCPZnvRCbG63Oa1ztz4B4r7xG_wsoC9ucd_ei3--Pz7UD50yQD/pub
+#filter: css:#contents > table:first-of-type ul:first-of-type,html2text---
 ---
 kind: url
 name: Connecticut
