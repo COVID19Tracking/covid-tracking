@@ -121,7 +121,7 @@ filter: css:.ftrTable,html2text
 kind: url
 name: Maine
 url: https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml
-filter: css:.article > table:nth-child(6),html2text,strip
+filter: css:table:contains("Testing Data"),html2text
 ---
 kind: url
 name: Michigan
