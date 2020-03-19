@@ -35,7 +35,7 @@ filter: css:#contents > table:first-of-type ul:first-of-type,html2text
 kind: url
 name: Connecticut
 url: https://portal.ct.gov/Coronavirus
-filter: css:#mainContent > .features .callout.primary,html2text
+filter: css:table:contains("Latest COVID-19"),html2text
 ---
 kind: url
 name: Washington DC
