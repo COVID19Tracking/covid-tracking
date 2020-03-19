@@ -18,7 +18,10 @@ kind: url
 name: Arizona
 # url: https://covid-gate-passer.joshellington.com/?url=https://tableau.azdhs.gov/vizql/w/COVID-19Dashboard/v/COVID-19table/viewData/sessions/5554D2F1779C4BF3849C16FB6BA78AAB-1:0/views/8275719771277684273_2738315765867498942?maxrows=200&viz=%7B%22worksheet%22%3A%22Testing%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D
 # # url: https://covid-gate-passer.joshellington.com/?url=https://tableau.azdhs.gov/vizql/w/COVID-19Dashboard/v/COVID-19table/viewData/sessions/2E4F765868C540BEBD3CC634AC0A8E54-1:3/views/8275719771277684273_133021235305994309?maxrows=200&viz=%7B%22worksheet%22%3A%22Total%20and%20deaths%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D
-url: http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html
+# NOTE: covid-19 hasn't been updated since 3/15
+# url: http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Ftableau.azdhs.gov%2Fviews%2FCOVID-19Dashboard%2FCOVID-19table%3F%3Aembed%3Dy%26%3AshowVizHome%3Dno%26%3Ahost_url%3Dhttps%253A%252F%252Ftableau.azdhs.gov%252F%26%3Aembed_code_version%3D3%26%3Atabs%3Dno%26%3Atoolbar%3Dno%26%3AshowAppBanner%3Dfalse%26%3Adisplay_spinner%3Dno%26iframeSizedToWindow%3Dtrue%26%3AloadOrderID%3D0%27%2C%20renderType%3A%20%27jpg%27%7D
+filter: sha1sum
 # filter: css:table.datatable,html2text
 # # filter: css:div.tabContent-panel-underlying table,html2text
 ---
@@ -35,12 +38,12 @@ filter: css:p:contains("Case Summary") ~ p,html2text,strip
 kind: url
 name: Connecticut
 url: https://portal.ct.gov/Coronavirus
-filter: css:table:contains("Latest COVID-19"),html2text
+filter: css:.content > table,html2text,strip
 ---
 kind: url
 name: Washington DC
 url: https://coronavirus.dc.gov/page/coronavirus-data
-filter: element-by-id:block-system-main,html2text
+filter: css:.field-item > ul:nth-child(2),html2text,strip
 ---
 kind: url
 name: Delaware
@@ -60,7 +63,7 @@ filter: css:table.stacked-row-plus,html2text,strip
 kind: url
 name: Hawaii
 url: https://health.hawaii.gov/docd/advisories/novel-coronavirus-2019/
-filter: css:.advisory_content p:contains("Cases in Hawaii") ~ p,html2text,strip
+filter: css:.advisory_content > table,html2text,strip
 ---
 kind: url
 name: Iowa
@@ -253,12 +256,15 @@ ssl_no_verify: true
 ---
 kind: url
 name: Utah
-url: https://coronavirus.utah.gov/latest/
-filter: css:.x-row-inner:contains("Confirmed cases by health district"),html2text
+url: https://coronavirus-dashboard.utah.gov/
+filter: css:#row,html2text,strip
 ---
 kind: url
 name: Virginia
-url: http://covid19-api.exemplartech.com/github-data/captive-browser/va_tableau.html
+# NOTE: covid19-api has not updated since 3/16
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fpublic.tableau.com%2Fviews%2FVirginiaCOVID-19Dashboard%2FVirginiaCOVID-19Dashboard%3F%3Aembed%3Dyes%26%3Adisplay_count%3Dyes%26%3AshowVizHome%3Dno%26%3Atoolbar%3Dno%27%2C%20renderType%3A%20%27jpg%27%7D
+filter: sha1sum
+# url: http://covid19-api.exemplartech.com/github-data/captive-browser/va_tableau.html
 # url: http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/
 # # navigate: https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
 # filter: css:*,html2text
