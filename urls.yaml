@@ -207,8 +207,8 @@ filter: css:table,html2text
 ---
 kind: url
 name: Oregon
-url: https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ/Pages/emerging-respiratory-infections.aspx
-filter: css:.or-accordion-content-field .ews-table,html2text,strip
+url: https://govstatus.egov.com/OR-OHA-COVID-19
+filter: css:table:contains("Oregon Test Results"),html2text
 ---
 kind: url
 name: Pennsylvania
