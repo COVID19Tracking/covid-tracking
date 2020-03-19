@@ -261,7 +261,10 @@ filter: css:#row,html2text,strip
 ---
 kind: url
 name: Virginia
-url: http://covid19-api.exemplartech.com/github-data/captive-browser/va_tableau.html
+# NOTE: covid19-api has not updated since 3/16
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fpublic.tableau.com%2Fviews%2FVirginiaCOVID-19Dashboard%2FVirginiaCOVID-19Dashboard%3F%3Aembed%3Dyes%26%3Adisplay_count%3Dyes%26%3AshowVizHome%3Dno%26%3Atoolbar%3Dno%27%2C%20renderType%3A%20%27jpg%27%7D
+filter: sha1sum
+# url: http://covid19-api.exemplartech.com/github-data/captive-browser/va_tableau.html
 # url: http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/
 # # navigate: https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
 # filter: css:*,html2text
