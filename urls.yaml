@@ -35,7 +35,7 @@ filter: css:p:contains("Case Summary") ~ p,html2text,strip
 kind: url
 name: Connecticut
 url: https://portal.ct.gov/Coronavirus
-filter: css:#mainContent > .features .callout.primary,html2text
+filter: css:.content > table,html2text,strip
 ---
 kind: url
 name: Washington DC
