@@ -35,7 +35,7 @@ filter: css:p:contains("Case Summary") ~ p,html2text,strip
 kind: url
 name: Connecticut
 url: https://portal.ct.gov/Coronavirus
-filter: css:table:contains("Latest COVID-19"),html2text
+filter: css:#mainContent > .features .callout.primary,html2text
 ---
 kind: url
 name: Washington DC
@@ -253,8 +253,8 @@ ssl_no_verify: true
 ---
 kind: url
 name: Utah
-url: https://coronavirus.utah.gov/latest/
-filter: css:.x-row-inner:contains("Confirmed cases by health district"),html2text
+url: https://coronavirus-dashboard.utah.gov/
+filter: css:#row,html2text,strip
 ---
 kind: url
 name: Virginia
