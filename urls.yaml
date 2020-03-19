@@ -40,7 +40,7 @@ filter: css:.content > table,html2text,strip
 kind: url
 name: Washington DC
 url: https://coronavirus.dc.gov/page/coronavirus-data
-filter: element-by-id:block-system-main,html2text
+filter: css:.field-item > ul:nth-child(2),html2text,strip
 ---
 kind: url
 name: Delaware
