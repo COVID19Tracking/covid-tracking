@@ -18,7 +18,10 @@ kind: url
 name: Arizona
 # url: https://covid-gate-passer.joshellington.com/?url=https://tableau.azdhs.gov/vizql/w/COVID-19Dashboard/v/COVID-19table/viewData/sessions/5554D2F1779C4BF3849C16FB6BA78AAB-1:0/views/8275719771277684273_2738315765867498942?maxrows=200&viz=%7B%22worksheet%22%3A%22Testing%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D
 # # url: https://covid-gate-passer.joshellington.com/?url=https://tableau.azdhs.gov/vizql/w/COVID-19Dashboard/v/COVID-19table/viewData/sessions/2E4F765868C540BEBD3CC634AC0A8E54-1:3/views/8275719771277684273_133021235305994309?maxrows=200&viz=%7B%22worksheet%22%3A%22Total%20and%20deaths%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D
-url: http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html
+# NOTE: covid-19 hasn't been updated since 3/15
+# url: http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Ftableau.azdhs.gov%2Fviews%2FCOVID-19Dashboard%2FCOVID-19table%3F%3Aembed%3Dy%26%3AshowVizHome%3Dno%26%3Ahost_url%3Dhttps%253A%252F%252Ftableau.azdhs.gov%252F%26%3Aembed_code_version%3D3%26%3Atabs%3Dno%26%3Atoolbar%3Dno%26%3AshowAppBanner%3Dfalse%26%3Adisplay_spinner%3Dno%26iframeSizedToWindow%3Dtrue%26%3AloadOrderID%3D0%27%2C%20renderType%3A%20%27jpg%27%7D
+filter: sha1sum
 # filter: css:table.datatable,html2text
 # # filter: css:div.tabContent-panel-underlying table,html2text
 ---
