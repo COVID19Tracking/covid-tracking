@@ -28,7 +28,7 @@ filter: sha1sum
 kind: url
 name: California
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl:%22https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx%22,renderType:%22html%22%7D
-filter: css:.NewsItemContent p:contains("there are a total of"),html2text
+filter: css:p:contains("there are a total of"),html2text,strip
 ---
 kind: url
 name: Colorado
