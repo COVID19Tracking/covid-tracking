@@ -73,7 +73,7 @@ filter: css:p:contains("negative COVID-19"),html2text,strip
 kind: url
 name: Idaho
 url: https://coronavirus.idaho.gov/
-filter: css:.wp-block-table,html2text
+filter: css:.tablepress,html2text,strip
 ---
 kind: url
 name: Illinois
