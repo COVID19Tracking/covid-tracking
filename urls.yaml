@@ -90,19 +90,9 @@ filter: css:dd .flex-container,html2text,strip
 ---
 kind: url
 name: Indiana
+# https://www.in.gov/coronavirus/
 url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=Counts%3E0&outFields=%2A
 filter: css:.ftrTable,html2text
-# # went back to HTML format for coverage.  - Josh
-# # url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=0%3D0&outFields=%2A&f=json
-# # This grabs the JSON used to render the arcgis maps/tables. Relevant data is in the "features" attribute
-# # filter: format-indiana
-# # Disabled until urlwatch package is updated on server
-# ---
-# kind: url
-# name: Indiana
-# url: https://www.in.gov/isdh/28470.htm
-# # no structured data here, just report when any part of the page changes
-# filter: css:.subpage-text-inner,html2text
 ---
 kind: url
 name: Kansas
@@ -116,6 +106,7 @@ filter: css:.alert-success,html2text
 ---
 kind: url
 name: Louisiana
+# http://ldh.la.gov/Coronavirus/
 url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/State_Level_Information_1/FeatureServer/0/query?f=html&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=50&cacheHint=true
 filter: css:table.ftrTable,html2text
 ---
@@ -126,6 +117,7 @@ filter: css:table,html2text
 ---
 kind: url
 name: Maryland
+# https://coronavirus.maryland.gov/
 url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/COVID19_MD_CountyCaseCounts_DEMO/FeatureServer/0/query?where=COVID19Cases%3C%3E0&returnGeometry=false&outFields=County,COVID19Cases
 filter: css:.ftrTable,html2text
 ---
@@ -148,11 +140,6 @@ kind: url
 name: Missouri
 url: https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/
 filter: css:table,html2text,strip
-#---
-# PowerBI so get an image
-#kind: url
-#name: Missouri2
-#url: http://covid19-api.exemplartech.com/github-data/captive-browser/mo_power_bi.html
 ---
 kind: url
 name: Mississippi
@@ -161,6 +148,7 @@ filter: css:.msdh .shadedBlue,html2text
 ---
 kind: url
 name: Montana
+# https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt
 url: https://services.arcgis.com/qnjIrwR8z5Izc0ij/arcgis/rest/services/PUBLIC_VIEW_COVID19_CASES/FeatureServer/0/query?f=json&where=Total%20%3C%3E%200&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Total%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D
 ---
 kind: url
@@ -207,9 +195,7 @@ filter: css:.setFocusRing text title,html2text,strip
 ---
 kind: url
 name: Ohio
-url: https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/Novel-Coronavirus/welcome/
-# Alternate CSS-based filter, includes <sup>
-# filter: css:.odx-content-section table,html2text
+url: https://coronavirus.ohio.gov/wps/portal/gov/covid-19/
 filter: css:.odh-ads__container .odh-ads__items,html2text
 ---
 kind: url
@@ -226,19 +212,10 @@ kind: url
 name: Pennsylvania
 url: https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx
 filter: css:table:contains("Negative"),html2text
-# ---
-# NOTE: Disabling harder-to-human-parse JSON feed for direct query param'd Sheet parsing
-# kind: url
-# name: Rhode Island
-# # this is the underlying spreadsheet backing the table on https://health.ri.gov/data/covid-19/, returning json formatted data
-# url: https://docs.google.com/spreadsheet/tq?key=1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q&headers=0&range=A2%3AB5&gid=0
-# # filter out the JSONP function call to get just the data object
-# filter: re.sub:\/\*O_o\*\/,re.sub:google.visualization.Query.setResponse\(,re.sub:\);$,format-json
-# headers:
-#   User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
 ---
 kind: url
 name: Rhode Island
+# https://health.ri.gov/diseases/ncov2019/
 url: https://docs.google.com/spreadsheets/d/1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q/edit?rm=minimal&chrome=false&ui=1&output=html#gid=0
 filter: css:tbody td,html2text
 ---
@@ -250,7 +227,7 @@ filter: css:table:contains("Negative tests"),html2text
 kind: url
 name: South Dakota
 url: https://doh.sd.gov/news/Coronavirus.aspx
-filter: css:table.MsoTableGrid,html2text
+filter: css:table.MsoTableGrid,html2text,strip
 ---
 kind: url
 name: Tennessee
@@ -270,13 +247,11 @@ filter: css:#row,html2text,strip
 ---
 kind: url
 name: Virginia
-# NOTE: covid19-api has not updated since 3/16
+# http://www.vdh.virginia.gov/coronavirus/
+# https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fpublic.tableau.com%2Fviews%2FVirginiaCOVID-19Dashboard%2FVirginiaCOVID-19Dashboard%3F%3Aembed%3Dyes%26%3Adisplay_count%3Dyes%26%3AshowVizHome%3Dno%26%3Atoolbar%3Dno%27%2C%20renderType%3A%20%27jpg%27%7D
 filter: sha1sum
-# url: http://covid19-api.exemplartech.com/github-data/captive-browser/va_tableau.html
-# url: http://www.vdh.virginia.gov/surveillance-and-investigation/novel-coronavirus/
-# # navigate: https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
-# filter: css:*,html2text
+# filter: ocr,clean-new-lines
 ---
 kind: url
 name: Vermont
@@ -290,8 +265,9 @@ filter: css:.row table,html2text
 ---
 kind: url
 name: Wisconsin
-url: https://www.dhs.wisconsin.gov/outbreaks/index.htm
-filter: css:.single-column table,html2text
+# https://www.dhs.wisconsin.gov/outbreaks/index.htm
+url: https://services1.arcgis.com/ISZ89Z51ft1G16OK/arcgis/rest/services/COVID19_WI/FeatureServer/2/query?f=html&where=1%3D1&outFields=NEGATIVE%2CPOSITIVE%2CDEATHS%2CDATE&returnGeometry=false
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: West Virginia
@@ -318,7 +294,7 @@ filter: css:.bannerback,html2text
 kind: url
 name: Guam
 url: https://ghs.guam.gov/coronavirus-covid-19
-filter: css:.Blog .post:contains("Positive") .post-content,html2text,strip
+filter: css:.Blog .post:contains("COVID") .post-content,html2text,strip
 ---
 kind: url
 name: Puerto Rico
