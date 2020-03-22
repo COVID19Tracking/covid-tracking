@@ -195,8 +195,9 @@ filter: css:table,html2text
 ---
 kind: url
 name: North Dakota
+# https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fapp.powerbigov.us%2Fview%3Fr%3DeyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9%27%2C%20renderType%3A%20%27html%27%7D
-filter: css:.setFocusRing,html2text
+filter: css:.setFocusRing text title,html2text,strip
 ---
 kind: url
 name: Ohio
