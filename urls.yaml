@@ -28,7 +28,7 @@ kind: url
 name: California
 # https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%22https%3A%2F%2Fcovid19.ca.gov%2F%22%2CrenderType%3A%22html%22%7D
-filter: css:p:contains("there are a total of"),html2text,strip
+filter: css:p:contains("the latest numbers"),html2text,strip
 # ---
 # kind: url
 # name: California
