@@ -287,8 +287,9 @@ filter: css:.single-column table,html2text
 ---
 kind: url
 name: West Virginia
+# https://dhhr.wv.gov/COVID-19/Pages/default.aspx
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fdhhr.wv.gov%2FCOVID-19%2FPages%2Fdefault.aspx%27%2C%20renderType%3A%20%27html%27%7D
-filter: css:.bluebkg table,html2text
+filter: css:.bluebkg table .row,html2text
 ---
 kind: url
 name: Wyoming
