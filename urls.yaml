@@ -52,12 +52,13 @@ filter: css:.field-item > ul:nth-child(2),html2text,strip
 ---
 kind: url
 name: Delaware
+# https://coronavirus.delaware.gov/
 url: https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_View/FeatureServer/0/query?where=(NAME%20%3D%20%27Kent%27)%20OR%20(NAME%20%3D%20%27New%20Castle%27)%20OR%20(NAME%20%3D%20%27Sussex%27)&returnGeometry=false&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Presumptive_Positive%22%2C%22outStatisticFieldName%22%3A%22Presumptive_Positive%22%7D%5D&outFields=%2A
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Florida
-url: http://www.floridahealth.gov/diseases-and-conditions/COVID-19/
+url: https://floridahealthcovid19.gov/
 filter: css:table,html2text,strip
 ---
 kind: url
@@ -72,8 +73,10 @@ filter: css:.advisory_content > table,html2text,strip
 ---
 kind: url
 name: Iowa
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl:%22https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus%22,renderType:%22html%22%7D
-filter: css:p:contains("negative COVID-19"),html2text,strip
+# https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
+# url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl:%22https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus%22,renderType:%22html%22%7D
+url: https://services.arcgis.com/vPD5PVLI6sfkZ5E4/arcgis/rest/services/IA_COVID19_Cases/FeatureServer/0/query?f=html&where=Confirmed%20%3C%3E%200&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Confirmed%22%2C%22outStatisticFieldName%22%3A%22ConfirmedCases%22%7D%5D&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Idaho
