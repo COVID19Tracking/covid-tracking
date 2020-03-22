@@ -309,7 +309,7 @@ filter: css:.bannerback,html2text
 kind: url
 name: Guam
 url: https://ghs.guam.gov/coronavirus-covid-19
-filter: css:.Blog .row:nth-child(1) .post-content,html2text,strip
+filter: css:.Blog .post:contains("Positive") .post-content,html2text,strip
 ---
 kind: url
 name: Puerto Rico
