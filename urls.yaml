@@ -20,9 +20,10 @@ filter: css:#contentBody table:contains("Cases"),html2text,strip
 ---
 kind: url
 name: Arizona
+# https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Ftableau.azdhs.gov%2Fviews%2FCOVID-19Dashboard%2FCOVID-19table%3F%3Aembed%3Dy%26%3AshowVizHome%3Dno%26%3Ahost_url%3Dhttps%253A%252F%252Ftableau.azdhs.gov%252F%26%3Aembed_code_version%3D3%26%3Atabs%3Dno%26%3Atoolbar%3Dno%26%3AshowAppBanner%3Dfalse%26%3Adisplay_spinner%3Dno%26iframeSizedToWindow%3Dtrue%26%3AloadOrderID%3D0%27%2C%20renderType%3A%20%27jpg%27%7D
-filter: sha1sum
-# filter: ocr,clean-new-lines
+# filter: sha1sum
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: California
@@ -250,8 +251,8 @@ name: Virginia
 # http://www.vdh.virginia.gov/coronavirus/
 # https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fpublic.tableau.com%2Fviews%2FVirginiaCOVID-19Dashboard%2FVirginiaCOVID-19Dashboard%3F%3Aembed%3Dyes%26%3Adisplay_count%3Dyes%26%3AshowVizHome%3Dno%26%3Atoolbar%3Dno%27%2C%20renderType%3A%20%27jpg%27%7D
-filter: sha1sum
-# filter: ocr,clean-new-lines
+# filter: sha1sum
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: Vermont
