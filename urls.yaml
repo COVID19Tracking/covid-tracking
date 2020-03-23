@@ -136,7 +136,7 @@ filter: css:table,html2text,strip
 kind: url
 name: Minnesota
 url: https://www.health.state.mn.us/diseases/coronavirus/situation.html
-filter: css:ul:contains("patients tested"),html2text
+filter: css:ul:contains("Positive"),html2text
 ---
 kind: url
 name: Missouri
