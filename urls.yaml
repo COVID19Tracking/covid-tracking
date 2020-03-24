@@ -87,8 +87,8 @@ filter: css:.tablepress,html2text,strip
 ---
 kind: url
 name: Illinois
-url: http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus
-filter: css:dd .flex-container,html2text,strip
+# this is the underlying data behind http://www.dph.illinois.gov/topics-services/diseases-and-conditions/diseases-a-z-list/coronavirus
+url: http://www.dph.illinois.gov/sitefiles/COVIDTestResults.json
 ---
 kind: url
 name: Indiana
