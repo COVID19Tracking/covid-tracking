@@ -233,7 +233,7 @@ filter: css:table.MsoTableGrid,html2text,strip
 kind: url
 name: Tennessee
 url: https://www.tn.gov/health/cedep/ncov.html
-filter: css:table:contains("Testing Location"),html2text
+filter: css:table:contains("Laboratory Type"),html2text
 ---
 kind: url
 name: Texas
