@@ -7,11 +7,10 @@ filter: css:.grid2 > table,html2text,strip
 ---
 kind: url
 name: Alabama
-url: http://www.alabamapublichealth.gov/infectiousdiseases/2019-coronavirus.html
+# dashboard at https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7
+url: https://services7.arcgis.com/4RQmZZ0yaZkGR1zy/arcgis/rest/services/COV19_Public_Dashboard_ReadOnly/FeatureServer/0/query?f=json&where=CONFIRMED%20%3E%200&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22CONFIRMED%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true
 # AL ARCGIS dashboard (still publishing to a table ^):
 # https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7
-ssl_no_verify: true
-filter: css:.mainContent table,html2text
 ---
 kind: url
 name: Arkansas
