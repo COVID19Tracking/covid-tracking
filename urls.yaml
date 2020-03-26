@@ -54,8 +54,10 @@ filter: css:.field-item > ul:nth-child(2),html2text,strip
 kind: url
 name: Delaware
 # https://coronavirus.delaware.gov/
-url: https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_View/FeatureServer/0/query?where=(NAME%20%3D%20%27Kent%27)%20OR%20(NAME%20%3D%20%27New%20Castle%27)%20OR%20(NAME%20%3D%20%27Sussex%27)&returnGeometry=false&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Presumptive_Positive%22%2C%22outStatisticFieldName%22%3A%22Presumptive_Positive%22%7D%5D&outFields=%2A
-filter: css:.ftrTable,html2text,strip
+#url: https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_View/FeatureServer/0/query?where=(NAME%20%3D%20%27Kent%27)%20OR%20(NAME%20%3D%20%27New%20Castle%27)%20OR%20(NAME%20%3D%20%27Sussex%27)&returnGeometry=false&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Presumptive_Positive%22%2C%22outStatisticFieldName%22%3A%22Presumptive_Positive%22%7D%5D&outFields=%2A
+#filter: css:.ftrTable,html2text,strip
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:%22https://coronavirus.delaware.gov/%22,renderType:%22png%22,%22renderSettings%22:{selector:%22.embed-container%22}}
+filter: sha1sum
 ---
 kind: url
 name: Florida
