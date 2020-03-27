@@ -285,12 +285,11 @@ kind: url
 name: Wyoming
 url: https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/
 filter: css:.et_pb_text_inner:contains("Testing Numbers"),html2text
-# NOTE: AS placeholder
-# ---
-# kind: url
-# name: America Samoa
-# url: https://www.facebook.com/amsamgov/
-# filter: css:*,html2text,strip
+---
+kind: url
+name: American Samoa
+url: https://www.americansamoa.gov/covid-19-advisories
+filter: css:main div[id$="gridContainer"],html2text,strip
 ---
 kind: url
 name: Commonwealth of the Northern Mariana Islands
