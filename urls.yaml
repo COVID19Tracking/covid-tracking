@@ -49,7 +49,7 @@ filter: css:.callout--primary,html2text,strip
 kind: url
 name: Washington DC
 url: https://coronavirus.dc.gov/page/coronavirus-data
-filter: css:.field-item > ul:nth-child(3),html2text,strip
+filter: css:.datablock > ul:nth-child(3),html2text,strip
 ---
 kind: url
 name: Delaware
