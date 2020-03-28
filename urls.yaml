@@ -212,7 +212,7 @@ filter: css:table,html2text
 kind: url
 name: Oregon
 url: https://govstatus.egov.com/OR-OHA-COVID-19
-filter: css:table:contains("Total Completed Tests"),html2text
+filter: css:table:contains("Total persons"),html2text
 ---
 kind: url
 name: Pennsylvania
