@@ -66,8 +66,9 @@ filter: css:table,html2text,strip
 ---
 kind: url
 name: Georgia
-url: https://dph.georgia.gov/covid-19-daily-status-report
-filter: css:table.stacked-row-plus,html2text,strip
+# https://dph.georgia.gov/covid-19-daily-status-report
+url: https://d20s4vd27d0hk0.cloudfront.net/
+filter: css:table table:contains("Commercial Lab"),html2text,strip
 ---
 kind: url
 name: Hawaii
