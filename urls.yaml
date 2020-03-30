@@ -303,7 +303,7 @@ filter: css:.Blog .post:contains("COVID") .post-content,html2text,strip
 kind: url
 name: Puerto Rico
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fe.infogram.com/dab81851-e3af-4767-b1f5-9b54eb900274%27%2C%20renderType%3A%20%27html%27,%22requestSettings%22:{%22waitInterval%22:2000}}
-filter: css:div.InfographicEditor-Contents-Item,html2text,strip
+filter: css:div.InfographicEditor-Contents-Item:nth-child(-n+23) div[data-contents="true"],html2text,strip
 ---
 kind: url
 name: Virgin Islands
