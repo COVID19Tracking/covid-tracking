@@ -48,7 +48,7 @@ filter: css:.content a[href*="CTDPH"],strip
 kind: url
 name: Washington DC
 url: https://coronavirus.dc.gov/page/coronavirus-data
-filter: css:.datablock > ul:nth-child(3),html2text,strip
+filter: css:ul:contains("tested") li:first-child,html2text,strip
 ---
 kind: url
 name: Delaware
