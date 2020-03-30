@@ -126,7 +126,7 @@ url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MD_COVID1
 kind: url
 name: Maine
 url: https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus.shtml
-filter: css:table:contains("Tests"),html2text
+filter: css:table:contains("Data"),html2text
 ---
 kind: url
 name: Michigan
