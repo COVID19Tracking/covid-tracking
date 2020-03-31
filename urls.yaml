@@ -71,8 +71,8 @@ filter: css:table table:contains("Commercial Lab"),html2text,strip
 ---
 kind: url
 name: Hawaii
-url: https://health.hawaii.gov/coronavirusdisease2019/
-filter: css:.wp-block-lazyblock-statistics-panel,html2text,strip
+url: https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/
+filter: css:table:contains("Novel Coronavirus in Hawaii"),html2text,strip
 ---
 kind: url
 name: Iowa
