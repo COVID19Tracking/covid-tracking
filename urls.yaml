@@ -1,13 +1,14 @@
 kind: url
 name: Alaska
 url: http://dhss.alaska.gov/dph/Epi/id/SiteAssets/Pages/HumanCoV/COVID-19_epi_testingcurve.csv
-# url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27http%3A%2F%2Fdhss.alaska.gov%2Fdph%2FEpi%2Fid%2FPages%2FCOVID-19%2Fmonitoring.aspx%27%2C%20renderType%3A%20%27jpg%27%2C%20renderSettings%3A%20%7Bselector%3A%20%27.grid2%20.box%27%7D%7D
+# url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx',renderType:'jpg',renderSettings:{selector:'.grid2 .box'}}
 # filter: sha1sum
 ---
 kind: url
 name: Alabama
 # dashboard at https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7
-url: https://services7.arcgis.com/4RQmZZ0yaZkGR1zy/arcgis/rest/services/COV19_Public_Dashboard_ReadOnly/FeatureServer/0/query?f=json&where=CONFIRMED%20%3E%200&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22CONFIRMED%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true
+url: https://services7.arcgis.com/4RQmZZ0yaZkGR1zy/arcgis/rest/services/COV19_Public_Dashboard_ReadOnly/FeatureServer/0/query?where=CONFIRMED>0&outStatistics=[{"statisticType":"sum","onStatisticField":"CONFIRMED"}]&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 # AL ARCGIS dashboard (still publishing to a table ^):
 # https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7
 ---
@@ -19,14 +20,14 @@ filter: css:#contentBody table:contains("Cases"),html2text,strip
 kind: url
 name: Arizona
 # https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Ftableau.azdhs.gov%2Fviews%2FCOVID-19Dashboard%2FCOVID-19table%3F%3Aembed%3Dy%26%3AshowVizHome%3Dno%26%3Ahost_url%3Dhttps%253A%252F%252Ftableau.azdhs.gov%252F%26%3Aembed_code_version%3D3%26%3Atabs%3Dno%26%3Atoolbar%3Dno%26%3AshowAppBanner%3Dfalse%26%3Adisplay_spinner%3Dno%26iframeSizedToWindow%3Dtrue%26%3AloadOrderID%3D0%27%2C%20renderType%3A%20%27jpg%27%7D
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://tableau.azdhs.gov/views/COVID-19Dashboard/COVID-19table?:embed=y',renderType:'jpg'}
 # filter: sha1sum
 filter: ocr,clean-new-lines
 ---
 kind: url
 name: California
 # https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx
-#url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%22https%3A%2F%2Fcovid19.ca.gov%2F%22%2CrenderType%3A%22html%22%7D
+#url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://covid19.ca.gov/',renderType:'html'}
 url: https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx
 filter: css:table:contains("State Officials Announce") tr:nth-child(1),html2text,strip
 # ---
@@ -53,7 +54,7 @@ filter: css:ul:contains("tested") li:first-child,html2text,strip
 kind: url
 name: Delaware
 # https://coronavirus.delaware.gov/
-url: https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_Time_VIEW/FeatureServer/0/query?where=1%3D1&outFields=NAME%2CRecovered%2CTotal_Death%2CHospitalizations%2CNegativeCOVID%2CPresumptive_Positive%2CPending&returnGeometry=false&cacheHint=true
+url: https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_Time_VIEW/FeatureServer/0/query?where=1=1&outFields=NAME,Recovered,Total_Death,Hospitalizations,NegativeCOVID,Presumptive_Positive,Pending&returnGeometry=false&cacheHint=true
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
@@ -75,8 +76,8 @@ filter: css:table:contains("Novel Coronavirus in Hawaii"),html2text,strip
 kind: url
 name: Iowa
 # https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
-# url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl:%22https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus%22,renderType:%22html%22%7D
-url: https://services.arcgis.com/vPD5PVLI6sfkZ5E4/arcgis/rest/services/IA_COVID19_Cases/FeatureServer/0/query?f=html&where=Confirmed%20%3C%3E%200&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Confirmed%22%2C%22outStatisticFieldName%22%3A%22ConfirmedCases%22%7D%5D&cacheHint=true
+# url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus',renderType:'html'}
+url: https://services.arcgis.com/vPD5PVLI6sfkZ5E4/arcgis/rest/services/IA_COVID19_Cases/FeatureServer/0/query?where=Confirmed<>0&outStatistics=[{"statisticType":"sum","onStatisticField":"Confirmed"}]&cacheHint=true
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
@@ -92,8 +93,8 @@ url: http://www.dph.illinois.gov/sitefiles/COVIDTestResults.json
 kind: url
 name: Indiana
 # https://www.in.gov/coronavirus/
-url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=Counts%3E0&outFields=%2A
-filter: css:.ftrTable,html2text
+url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=Counts>0&outFields=*
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Kansas
@@ -108,8 +109,8 @@ filter: css:.alert-success,html2text
 kind: url
 name: Louisiana
 # http://ldh.la.gov/Coronavirus/
-url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/State_Level_Information_1/FeatureServer/0/query?f=html&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&resultOffset=0&resultRecordCount=50&cacheHint=true
-filter: css:table.ftrTable,html2text
+url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/State_Level_Information_1/FeatureServer/0/query?where=1=1&returnGeometry=false&outFields=*&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Massachusetts
@@ -119,7 +120,8 @@ filter: css:table,html2text
 kind: url
 name: Maryland
 # https://coronavirus.maryland.gov/
-url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MD_COVID19_Case_Counts_by_County/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22COVID19Cases%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&cacheHint=true
+url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MD_COVID19_Case_Counts_by_County/FeatureServer/0/query?where=1=1&outStatistics=[{"statisticType":"sum","onStatisticField":"COVID19Cases"}]&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Maine
@@ -149,7 +151,8 @@ filter: css:.msdh .shadedBlue,html2text
 kind: url
 name: Montana
 # https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt
-url: https://services.arcgis.com/qnjIrwR8z5Izc0ij/arcgis/rest/services/PUBLIC_VIEW_COVID19_CASES/FeatureServer/0/query?f=json&where=Total%20%3C%3E%200&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Total%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D
+url: https://services.arcgis.com/qnjIrwR8z5Izc0ij/arcgis/rest/services/PUBLIC_VIEW_COVID19_CASES/FeatureServer/0/query?where=Total<>0&outStatistics=[{"statisticType":"sum","onStatisticField":"Total"}]&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Nebraska
@@ -177,7 +180,7 @@ filter: css:.et_pb_text_inner:contains("COVID-19 Test Results"),html2text,strip
 kind: url
 name: Nevada
 # https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9%27%2C%20renderType%3A%20%27html%27%7D
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9',renderType:'html'}
 filter: css:[aria-label*="Test"] title,html2text,strip
 ---
 kind: url
@@ -193,7 +196,7 @@ filter: css:table,html2text
 kind: url
 name: North Dakota
 # https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
-#url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fapp.powerbigov.us%2Fview%3Fr%3DeyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9%27%2C%20renderType%3A%20%27html%27%7D
+#url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9',renderType:'html'}
 url: https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases
 filter: css:.circle,html2text,strip
 ---
@@ -241,7 +244,8 @@ filter: css:table:contains("Laboratory Type"),html2text
 kind: url
 name: Texas
 # dashboard backing https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83
-url: https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/COVID19County_ViewLayer/FeatureServer/0/query?f=json&where=Count_%3C%3E0&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Count_%20desc&outSR=102100&resultOffset=0&resultRecordCount=254&cacheHint=true
+url: https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/COVID19County_ViewLayer/FeatureServer/0/query?where=Count_<>0&returnGeometry=false&outFields=*&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Utah
@@ -252,7 +256,7 @@ kind: url
 name: Virginia
 # http://www.vdh.virginia.gov/coronavirus/
 # https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fpublic.tableau.com%2Fviews%2FVirginiaCOVID-19Dashboard%2FVirginiaCOVID-19Dashboard%3F%3Aembed%3Dyes%26%3Adisplay_count%3Dyes%26%3AshowVizHome%3Dno%26%3Atoolbar%3Dno%27%2C%20renderType%3A%20%27jpg%27%7D
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:showVizHome=no',renderType:'jpg'}
 # filter: sha1sum
 filter: ocr,clean-new-lines
 ---
@@ -264,19 +268,19 @@ filter: css:.field-body table,html2text
 kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https://msit.powerbi.com/view?r=eyJrIjoiZDAwZGUyNGItMTJlNy00ZGY5LWI2ZGUtZDM1ZDdmYTY1OTgzIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9%27%2C%20renderType%3A%20%27html%27%7D
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://msit.powerbi.com/view?r=eyJrIjoiZDAwZGUyNGItMTJlNy00ZGY5LWI2ZGUtZDM1ZDdmYTY1OTgzIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9',renderType:'html'}
 filter: css:visual-container-modern .cell-interactive,html2text,strip
 ---
 kind: url
 name: Wisconsin
 # https://www.dhs.wisconsin.gov/outbreaks/index.htm
-url: https://services1.arcgis.com/ISZ89Z51ft1G16OK/arcgis/rest/services/COVID19_WI/FeatureServer/2/query?f=html&where=1%3D1&outFields=NEGATIVE%2CPOSITIVE%2CDEATHS%2CDATE&returnGeometry=false
+url: https://services1.arcgis.com/ISZ89Z51ft1G16OK/arcgis/rest/services/COVID19_WI/FeatureServer/2/query?where=1=1&outFields=NEGATIVE,POSITIVE,DEATHS,DATE&returnGeometry=false&useCacheHint=true
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: West Virginia
 # https://dhhr.wv.gov/COVID-19/Pages/default.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fdhhr.wv.gov%2FCOVID-19%2FPages%2Fdefault.aspx%27%2C%20renderType%3A%20%27html%27%7D
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://dhhr.wv.gov/COVID-19/Pages/default.aspx',renderType:'html'}
 filter: css:.bluebkg table .row,html2text
 ---
 kind: url
@@ -301,7 +305,7 @@ filter: css:.Blog .post:contains("COVID") .post-content,html2text,strip
 ---
 kind: url
 name: Puerto Rico
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https%3A%2F%2Fe.infogram.com/dab81851-e3af-4767-b1f5-9b54eb900274%27%2C%20renderType%3A%20%27html%27,%22requestSettings%22:{%22waitInterval%22:2000}}
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://e.infogram.com/dab81851-e3af-4767-b1f5-9b54eb900274',renderType:'html','requestSettings':{'waitInterval':2000}}
 filter: css:div.InfographicEditor-Contents-Item:nth-child(-n+23) div[data-contents="true"],html2text,strip
 ---
 kind: url
