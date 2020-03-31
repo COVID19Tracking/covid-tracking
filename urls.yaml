@@ -267,7 +267,7 @@ kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request=%7Burl%3A%27https://msit.powerbi.com/view?r=eyJrIjoiZDAwZGUyNGItMTJlNy00ZGY5LWI2ZGUtZDM1ZDdmYTY1OTgzIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9%27%2C%20renderType%3A%20%27html%27%7D
-filter: css:[aria-label^="Confirmed"] title,html2text
+filter: css:visual-container-modern .cell-interactive,html2text,strip
 ---
 kind: url
 name: Wisconsin
