@@ -244,7 +244,7 @@ filter: css:table:contains("Laboratory Type"),html2text
 kind: url
 name: Texas
 # dashboard backing https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83
-url: https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/COVID19County_ViewLayer/FeatureServer/0/query?where=Count_<>0&returnGeometry=false&outFields=*&cacheHint=true
+url: https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/COVID19County_ViewLayer/FeatureServer/0/query?where=Count_%3C%3E0&returnGeometry=false&outFields=*&cacheHint=true&outStatistics=[{%22statisticType%22:%22sum%22,%22onStatisticField%22:%22Count_%22}]
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
