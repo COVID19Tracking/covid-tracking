@@ -268,8 +268,8 @@ filter: css:.field-body table,html2text
 kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://msit.powerbi.com/view?r=eyJrIjoiZDAwZGUyNGItMTJlNy00ZGY5LWI2ZGUtZDM1ZDdmYTY1OTgzIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9',renderType:'html'}
-filter: css:visual-container-modern .cell-interactive,html2text,strip
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://msit.powerbi.com/view?r=eyJrIjoiYWFjMjU1ZjEtOWU5YS00M2EzLWE1ZGUtYmM1YWRjMTZmMDllIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9',renderType:'html'}
+filter: css:.bodyCells .cell-interactive,html2text,strip
 ---
 kind: url
 name: Wisconsin
