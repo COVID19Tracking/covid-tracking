@@ -209,6 +209,7 @@ kind: url
 name: Oklahoma
 url: https://coronavirus.health.ok.gov/
 filter: css:table,html2text
+ssl_no_verify: true
 ---
 kind: url
 name: Oregon
