@@ -260,7 +260,7 @@ name: Virginia
 # https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
 url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:showVizHome=no',renderType:'jpg'}
 # filter: sha1sum
-filter: ocr,clean-new-lines,grepi:+ableau
+filter: ocr,clean-new-lines,grepi:\+ableau
 ---
 kind: url
 name: Vermont
