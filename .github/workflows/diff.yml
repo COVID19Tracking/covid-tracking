@@ -1,0 +1,54 @@
+# This workflow diffs the output of urlwatch before and after a pull request
+
+name: Diff
+
+# Triggers the workflow pull request events
+on: pull_request
+
+jobs:
+  diff:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    
+    - name: Install dependencies
+      run: |
+        sudo apt install tesseract-ocr
+        python -m pip install --upgrade pip
+        pip install git+https://github.com/COVID19Tracking/urlwatch.git -r https://raw.githubusercontent.com/COVID19Tracking/urlwatch/master/requirements-dev.txt
+    
+    - name: Make output dirs
+      run: mkdir output_base output_pull_request
+
+    - name: Checkout pull request
+      uses: actions/checkout@v2
+      with:
+        path: pull_request
+
+    - name: Checkout base
+      uses: actions/checkout@v2
+      with:
+        path: base
+        ref: ${{ github.event.pull_request.base.ref }}
+    
+    - name: Init cache
+      run: urlwatch --urls=base/urls.yaml
+
+    - name: Diff
+      # This will run against the cache built up in the previous step
+      run: |
+        urlwatch --urls=pull_request/urls.yaml > output_pull_request
+        cat output_pull_request
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: diff
+        path: output_pull_request
+      
+
+    
