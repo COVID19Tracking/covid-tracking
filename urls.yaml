@@ -1,7 +1,6 @@
 kind: url
 name: Alaska
-url: https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/COVID_Tests/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=cumulative_total&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=cumulative_total+desc&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=1&sqlFormat=none&f=html&token=
-# url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx',renderType:'jpg',renderSettings:{selector:'.grid2 .box'}}
+url: https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/COVID_Tests/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=cum_Total&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=cum_Total+desc&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=1&sqlFormat=none&f=html&token=
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
