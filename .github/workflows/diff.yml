@@ -21,9 +21,6 @@ jobs:
         sudo apt install tesseract-ocr
         python -m pip install --upgrade pip
         pip install git+https://github.com/COVID19Tracking/urlwatch.git -r https://raw.githubusercontent.com/COVID19Tracking/urlwatch/master/requirements-dev.txt
-    
-    - name: Make output dirs
-      run: mkdir output_base output_pull_request
 
     - name: Checkout pull request
       uses: actions/checkout@v2
