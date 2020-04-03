@@ -46,7 +46,7 @@ jobs:
       run: |
         # diff returns an error code if there are changs
         diff -rN output_base output_pull_request > diff_output || true
-        echo diff_output
+        cat diff_output
 
     - uses: actions/upload-artifact@v1
       with:
