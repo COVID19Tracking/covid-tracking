@@ -1,8 +1,8 @@
 kind: url
 name: Alaska
-url: http://dhss.alaska.gov/dph/Epi/id/SiteAssets/Pages/HumanCoV/COVID-19_epi_testingcurve.csv
+url: https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/COVID_Tests/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=cumulative_total&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=cumulative_total+desc&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=1&sqlFormat=none&f=html&token=
 # url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx',renderType:'jpg',renderSettings:{selector:'.grid2 .box'}}
-# filter: sha1sum
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Alabama
@@ -169,6 +169,7 @@ filter: css:table,html2text,strip
 ---
 kind: url
 name: New Jersey
+# site backing https://covid19.nj.gov
 url: https://www.nj.gov/health/
 filter: css:.slickCarousel-DOH .card-body table,html2text
 ---
