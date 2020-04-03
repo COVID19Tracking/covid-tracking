@@ -19,9 +19,9 @@ filter: css:#contentBody table:contains("Cases"),html2text,strip
 kind: url
 name: Arizona
 # https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://tableau.azdhs.gov/views/COVID-19Dashboard/COVID-19table?:embed=y',renderType:'jpg'}
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://tableau.azdhs.gov/views/UpdatedCOVIDdashboardV2/Story1?:embed=y',renderType:'jpg'}
 # filter: sha1sum
-filter: ocr,clean-new-lines
+filter: ocr,clean-new-lines,grepi:Refresh
 ---
 kind: url
 name: California
