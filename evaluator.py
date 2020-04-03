@@ -22,13 +22,13 @@ with open(args.urls_yaml, 'r') as yaml_file:
     urlwatch_output = ''
     try:
       urlwatch_output = subprocess.check_output(
-        ['urlwatch', '--urls', args.urls_yaml, '--test-filter', '{}'.format(i)], stderr=subprocess.STDOUT)
+        ['urlwatch', '--urls', args.urls_yaml, '--test-filter', '{}'.format(i)], stderr=subprocess.STDOUT).decode()
     except subprocess.CalledProcessError as e:
       urlwatch_output = e.output.decode()
 
     if args.output_dir:
       with open(os.path.join(args.output_dir, url['name']), 'w') as output_file:
         print(f"{url['name']}")
-        output_file.write(str(urlwatch_output))
+        output_file.write(urlwatch_output)
     else:
-      print(f"{url['name']}:\n{urlwatch_output}\n")
+      print(f"{url['name']}:\n{urlwatch_output}")
