@@ -83,7 +83,7 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Idaho
 url: https://coronavirus.idaho.gov/
-filter: css:.tablepress,html2text,strip
+filter: css:figure.wp-block-image img,strip
 ---
 kind: url
 name: Illinois
@@ -270,7 +270,7 @@ filter: css:.field-body table,html2text
 kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://msit.powerbi.com/view?r=eyJrIjoiYWFjMjU1ZjEtOWU5YS00M2EzLWE1ZGUtYmM1YWRjMTZmMDllIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://msit.powerbi.com/view?r=eyJrIjoiMzU1YjFjMzktZjk5ZS00OTA5LTkyMDQtNjNiZmQ0OWRmM2I1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9',renderType:'html'}
 filter: css:.bodyCells .cell-interactive,html2text,strip
 ---
 kind: url
