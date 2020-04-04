@@ -3,7 +3,7 @@ Tracking state test counts. Posting diff changes every ~30mins to #urlwatch in C
 
 ## Installation
 
-- To install the fork of urlwatch: `pip install git+https://github.com/COVID19Tracking/urlwatch.git -r https://raw.githubusercontent.com/COVID19Tracking/urlwatch/master/requirements-dev.txt`
+- To install the fork of urlwatch: `pip install git+https://github.com/COVID19Tracking/urlwatch.git`
   - You also need the tesseract-ocr package, for which you can find the installation instructions [here](https://tesseract-ocr.github.io/tessdoc/Home.html)
 - For development, you can also check out the `COVID19Tracking/urlwatch` repository and deploy from your local copy with `pip3 install .`
 
