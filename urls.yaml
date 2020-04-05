@@ -203,7 +203,7 @@ filter: css:.circle,html2text,strip
 kind: url
 name: Ohio
 url: https://coronavirus.ohio.gov/wps/portal/gov/covid-19/
-filter: css:.odh-ads__container .odh-ads__items,html2text
+filter: css:.odx-content-section .stats-cards__item,html2text,strip
 ---
 kind: url
 name: Oklahoma
