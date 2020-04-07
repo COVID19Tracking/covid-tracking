@@ -263,8 +263,8 @@ filter: ocr,clean-new-lines
 ---
 kind: url
 name: Vermont
-url: https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus
-filter: css:.field-body table,html2text
+url: https://services1.arcgis.com/BkFxaEFNwHqX3tAw/arcgis/rest/services/county_summary/FeatureServer/0/query?where=1%3D1&outFields=*&cacheHint=true&orderByFields=date+DESC&resultRecordCount=1&f=html
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Washington
