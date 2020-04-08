@@ -42,8 +42,10 @@ filter: css:p:contains("Case Summary") ~ p,html2text,strip
 ---
 kind: url
 name: Connecticut
-url: https://portal.ct.gov/Coronavirus
-filter: css:.content a[href*="CTDPH"],strip
+# data underlying http://datawrapper.dwcdn.net/ZHaBq/16/
+# which is embedded in https://data.ct.gov/stories/s/COVID-19-data/wa3g-tfvc/#covid-19-testing-data
+url: https://data.ct.gov/api/views/ncg4-6gkj/rows.csv?accessType=DOWNLOAD
+filter: strip
 ---
 kind: url
 name: Washington DC
