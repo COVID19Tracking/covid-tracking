@@ -241,8 +241,8 @@ filter: css:table.MsoTableGrid,html2text,strip
 ---
 kind: url
 name: Tennessee
-url: https://www.tn.gov/health/cedep/ncov.html
-filter: css:table:contains("Laboratory Type"),html2text
+url: https://apps.health.tn.gov/AEM_embed/TDH-2019-Novel-Coronavirus-Epi-and-Surveillance.pdf
+filter: sha1sum
 ---
 kind: url
 name: Texas
