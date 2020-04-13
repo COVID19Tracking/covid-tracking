@@ -99,8 +99,8 @@ filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Kansas
-url: https://govstatus.egov.com/coronavirus
-filter: css:p:contains("Confirmed Positive"),html2text
+url: https://www.coronavirus.kdheks.gov/
+filter: css:a:contains("Confirmed Cases")
 ---
 kind: url
 name: Kentucky
