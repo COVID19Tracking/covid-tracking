@@ -283,7 +283,7 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: West Virginia
 # dashboard backing https://dhhr.wv.gov/COVID-19/Pages/default.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiNmJkNThhMDMtYmZmMC00MTVkLWI5NTUtZWVhNDY4YmM0OWVjIiwidCI6IjhhMjZjZjAyLTQzNGEtNDMxZS04Y2FkLTdlYWVmOTdlZjQ4NCJ9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiOWYxOWM2NmUtYTViZS00MTc3LWFiMzEtNmMyYjljZTk1MzY3IiwidCI6IjhhMjZjZjAyLTQzNGEtNDMxZS04Y2FkLTdlYWVmOTdlZjQ4NCJ9',renderType:'html'}
 filter: css:.visualContainer:contains("Laboratory"),html2text
 ---
 kind: url
