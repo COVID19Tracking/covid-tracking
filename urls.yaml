@@ -210,7 +210,7 @@ filter: css:.odx-content-section .stats-cards__item,html2text,strip
 kind: url
 name: Oklahoma
 url: https://coronavirus.health.ok.gov/
-filter: css:table,html2text
+filter: css:iframe
 ssl_no_verify: true
 ---
 kind: url
