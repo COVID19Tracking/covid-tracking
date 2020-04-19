@@ -60,8 +60,8 @@ filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Florida
-url: https://floridahealthcovid19.gov/
-filter: css:table,html2text,strip
+url: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/ArcGIS/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&returnGeometry=true&cacheHint=false&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22T_positive%22%7D%2C%0D%0A%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22T_negative%22%7D%2C%0D%0A%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22T_total%22%7D%0D%0A%5D&f=html
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Georgia
@@ -121,7 +121,7 @@ filter: css:table,html2text
 kind: url
 name: Maryland
 # https://coronavirus.maryland.gov/
-url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MD_COVID19_Case_Counts_by_County/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=&returnGeometry=true&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22TotalCaseCount%22%7D%5D&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=html&token=
+url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MD_COVID19_Case_Counts_by_County/FeatureServer/0/query?where=1%3D1&cacheHint=true&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22TotalCaseCount%22%7D%5D&f=html
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
@@ -225,9 +225,9 @@ filter: css:table:contains("Negative"),html2text
 ---
 kind: url
 name: Rhode Island
-# https://health.ri.gov/diseases/ncov2019/
-url: https://docs.google.com/spreadsheets/d/1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q/edit?rm=minimal&chrome=false&ui=1&output=html#gid=0
-filter: css:tbody td,html2text
+# https://ri-department-of-health-covid-19-data-rihealth.hub.arcgis.com/
+url: https://services1.arcgis.com/dkWT1XL4nglP5MLP/ArcGIS/rest/services/COVID_Public_Map_TEST/FeatureServer/2/query?where=City_Town+%3D+'TOTAL'&objectIds=&time=&resultType=none&outFields=*&cacheHint=false&f=html
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: South Carolina
