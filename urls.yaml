@@ -283,8 +283,8 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: West Virginia
 # dashboard backing https://dhhr.wv.gov/COVID-19/Pages/default.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiODkxNTAxZWYtZDJlMC00MDY2LWE1NGItMjBjOWIyMTQ2MmQzIiwidCI6IjhhMjZjZjAyLTQzNGEtNDMxZS04Y2FkLTdlYWVmOTdlZjQ4NCJ9',renderType:'html'}
-filter: css:.visualContainer:contains("Laboratory"),html2text
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://dhhr.wv.gov/COVID-19/Pages/default.aspx',renderType:'png',renderSettings:{selector:'%23MSOZoneCell_WebPartWPQ5'}}
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: Wyoming
