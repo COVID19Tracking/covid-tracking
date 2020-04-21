@@ -152,7 +152,7 @@ filter: css:.msdh .shadedBlue,html2text
 kind: url
 name: Montana
 # https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt
-url: https://services.arcgis.com/qnjIrwR8z5Izc0ij/arcgis/rest/services/PUBLIC_VIEW_COVID19_CASES/FeatureServer/0/query?where=Total<>0&outStatistics=[{"statisticType":"sum","onStatisticField":"Total"}]&cacheHint=true
+url: https://services.arcgis.com/qnjIrwR8z5Izc0ij/arcgis/rest/services/COVID_Cases_Production_View/FeatureServer/0/query?where=Total<>0&outStatistics=[{"statisticType":"sum","onStatisticField":"Total"},{"statisticType":"sum","onStatisticField":"TotalDeaths"},{"statisticType":"sum","onStatisticField":"HospitalizationCount"},{"statisticType":"sum","onStatisticField":"TotalRecovered"}]&cacheHint=true
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
