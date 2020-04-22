@@ -161,7 +161,7 @@ name: Nebraska
 #url: http://dhhs.ne.gov/Pages/Coronavirus.aspx
 #filter: css:h2:contains("Nebraska Case Information") ~ span:contains("Total number"),html2text,strip
 # this site goes down sometimes but has up-to-date numbers
-url: https://gis.ne.gov/Agency/rest/services/COVID19_County_Layer/MapServer/1/query?f=json&where=lab_status%3D%27Not%20Detected%27%20AND%20NE_JURIS%3D%27yes%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22count%22%2C%22onStatisticField%22%3A%22ID%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D
+url: https://gis.ne.gov/Agency/rest/services/COVID19_County_Layer/MapServer/3/query?f=json&where=NE_JURIS%3D%27yes%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22count%22%2C%22onStatisticField%22%3A%22ID%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D
 ---
 kind: url
 name: New Hampshire
