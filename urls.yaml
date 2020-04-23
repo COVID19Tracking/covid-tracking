@@ -283,9 +283,8 @@ filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: West Virginia
-# dashboard backing https://dhhr.wv.gov/COVID-19/Pages/default.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://dhhr.wv.gov/COVID-19/Pages/default.aspx',renderType:'png',renderSettings:{selector:'%23MSOZoneCell_WebPartWPQ5'}}
-filter: ocr,clean-new-lines
+url: https://dhhr.wv.gov/COVID-19/Pages/default.aspx
+filter: css:table:contains("Daily"),html2text
 ---
 kind: url
 name: Wyoming
