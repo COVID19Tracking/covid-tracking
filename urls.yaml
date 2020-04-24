@@ -38,7 +38,7 @@ filter: css:table:contains("State Officials Announce") tr:nth-child(1),html2text
 kind: url
 name: Colorado
 url: https://covid19.colorado.gov/data
-filter: css:p:contains("Case Summary") ~ p,html2text,strip
+filter: css:article .paragraph--type--bp-columns__3col,html2text,strip
 ---
 kind: url
 name: Connecticut
