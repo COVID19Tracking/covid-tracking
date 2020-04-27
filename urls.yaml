@@ -93,9 +93,8 @@ url: http://www.dph.illinois.gov/sitefiles/COVIDTestResults.json
 ---
 kind: url
 name: Indiana
-# https://www.in.gov/coronavirus/
-url: https://services5.arcgis.com/f2aRfVsQG7TInso2/arcgis/rest/services/Coronavirus/FeatureServer/0/query?where=Counts>0&outFields=*
-filter: css:.ftrTable,html2text,strip
+# url: https://www.in.gov/coronavirus/
+url: https://hub.mph.in.gov/datastore/dump/182b6742-edac-442d-8eeb-62f96b17773e?format=json
 ---
 kind: url
 name: Kansas
@@ -176,8 +175,7 @@ filter: css:.slickCarousel-DOH .card-body table,html2text
 ---
 kind: url
 name: New Mexico
-url: https://cv.nmhealth.org/
-filter: css:.et_pb_text_inner:contains("COVID-19 Test Results"),html2text,strip
+url: https://e7p503ngy5.execute-api.us-west-2.amazonaws.com/prod/GetPublicStatewideData
 ---
 kind: url
 name: Nevada
@@ -209,8 +207,9 @@ filter: css:.odx-content-section .stats-cards__item,html2text,strip
 ---
 kind: url
 name: Oklahoma
-url: https://coronavirus.health.ok.gov/
-filter: css:iframe
+# url: https://coronavirus.health.ok.gov/
+url: https://storage.googleapis.com/ok-covid-gcs-public-download/covid19_cases_summary.pdf
+filter: sha1sum
 ssl_no_verify: true
 ---
 kind: url
