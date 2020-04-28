@@ -66,8 +66,9 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Georgia
 # https://dph.georgia.gov/covid-19-daily-status-report
-url: https://d20s4vd27d0hk0.cloudfront.net/
-filter: css:table table:contains("Commercial Lab"),html2text,strip
+#url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://ga-covid19.ondemand.sas.com/?initialWidth=1360%26childId=covid19dashdph',renderType:'html'}
+url: https://ga-covid19.ondemand.sas.com/report-images/ve1035-375x200.svg
+filter: html2text,strip
 ---
 kind: url
 name: Hawaii
