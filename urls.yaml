@@ -99,8 +99,9 @@ filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Kansas
-url: https://www.coronavirus.kdheks.gov/
-filter: css:a:contains("Confirmed Cases")
+#state page: https://www.coronavirus.kdheks.gov/
+url: https://public.tableau.com/views/COVID-19TableauVersion2/CaseSummary.png?%3AshowVizHome=no
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: Kentucky
