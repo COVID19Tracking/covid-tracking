@@ -310,7 +310,7 @@ filter: css:.Blog .post:contains("COVID") .post-content,html2text,strip
 kind: url
 name: Puerto Rico
 url: http://www.salud.gov.pr/Pages/coronavirus.aspx
-filter: css:table:contains("CASOS POS"),html2text,strip
+filter: css:table:contains("POSTIVOS"),html2text,strip
 ---
 kind: url
 name: Virgin Islands
