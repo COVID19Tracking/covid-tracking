@@ -77,10 +77,9 @@ filter: css:table:contains("Total Cases"),html2text,strip
 ---
 kind: url
 name: Iowa
-# https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus
-# url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://idph.iowa.gov/Emerging-Health-Issues/Novel-Coronavirus',renderType:'html'}
-url: https://services.arcgis.com/vPD5PVLI6sfkZ5E4/arcgis/rest/services/IA_COVID19_Cases/FeatureServer/0/query?where=Confirmed<>0&outStatistics=[{"statisticType":"sum","onStatisticField":"Confirmed"}]&cacheHint=true
-filter: css:.ftrTable,html2text,strip
+# https://coronavirus.iowa.gov/pages/case-counts
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://public.domo.com/embed/pages/erJAp',renderType:'html','requestSettings':{'waitInterval':6000}}
+filter: css:pg-layout-frame:contains("Individuals"),html2text,strip
 ---
 kind: url
 name: Idaho
