@@ -101,7 +101,7 @@ kind: url
 name: Kansas
 #state page: https://www.coronavirus.kdheks.gov/
 url: https://public.tableau.com/views/COVID-19TableauVersion2/CaseSummary.png?%3AshowVizHome=no
-filter: ocr,clean-new-lines
+filter: ocr,clean-new-lines,grep:Last updated
 ---
 kind: url
 name: Kentucky
