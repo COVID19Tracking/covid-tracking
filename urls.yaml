@@ -99,8 +99,9 @@ url: https://hub.mph.in.gov/datastore/dump/182b6742-edac-442d-8eeb-62f96b17773e?
 ---
 kind: url
 name: Kansas
-url: https://www.coronavirus.kdheks.gov/
-filter: css:a:contains("Confirmed Cases")
+#state page: https://www.coronavirus.kdheks.gov/
+url: https://public.tableau.com/views/COVID-19TableauVersion2/CaseSummary.png?%3AshowVizHome=no
+filter: ocr,clean-new-lines,grep:Last updated
 ---
 kind: url
 name: Kentucky
