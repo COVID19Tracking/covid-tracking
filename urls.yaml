@@ -272,8 +272,8 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://msit.powerbi.com/view?r=eyJrIjoiMzU1YjFjMzktZjk5ZS00OTA5LTkyMDQtNjNiZmQ0OWRmM2I1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9',renderType:'html'}
-filter: css:.bodyCells .cell-interactive,html2text,strip
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://www.doh.wa.gov/Emergencies/Coronavirus',renderType:'html'}
+filter: css:table:contains("Positive"),html2text,strip
 ---
 kind: url
 name: Wisconsin
