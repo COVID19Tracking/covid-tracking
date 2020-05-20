@@ -55,8 +55,8 @@ filter: css:ul:contains("tested") li:first-child,html2text,strip
 kind: url
 name: Delaware
 # https://coronavirus.delaware.gov/
-url: https://services1.arcgis.com/PlCPCPzGOwulHUHo/arcgis/rest/services/DEMA_COVID_County_Boundary_Time_VIEW/FeatureServer/0/query?where=1=1&outFields=NAME,Recovered,Total_Death,Hospitalizations,NegativeCOVID,Presumptive_Positive,Pending&returnGeometry=false&cacheHint=true
-filter: css:.ftrTable,html2text,strip
+url: https://myhealthycommunity.dhss.delaware.gov/embed/covid19/
+filter: css:div.c-summary-metric,html2text,strip
 ---
 kind: url
 name: Florida
@@ -272,8 +272,8 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://msit.powerbi.com/view?r=eyJrIjoiMzU1YjFjMzktZjk5ZS00OTA5LTkyMDQtNjNiZmQ0OWRmM2I1IiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9',renderType:'html'}
-filter: css:.bodyCells .cell-interactive,html2text,strip
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://www.doh.wa.gov/Emergencies/Coronavirus',renderType:'html'}
+filter: css:table:contains("Positive"),html2text,strip
 ---
 kind: url
 name: Wisconsin
