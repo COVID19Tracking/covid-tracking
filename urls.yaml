@@ -121,7 +121,7 @@ filter: css:table,html2text
 kind: url
 name: Maryland
 # https://coronavirus.maryland.gov/
-url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MD_COVID19_Case_Counts_by_County/FeatureServer/0/query?where=1%3D1&cacheHint=true&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22TotalCaseCount%22%7D%5D&f=html
+url: https://services.arcgis.com/njFNhDsUCentVYJW/ArcGIS/rest/services/MASTERCaseTracker/FeatureServer/0/query?where=Filter+IS+NOT+NULL&objectIds=&time=&resultType=none&outFields=&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B%22statisticType%22%3A%22max%22%2C%22onStatisticField%22%3A%22NegativeTests%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=html&token=
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
