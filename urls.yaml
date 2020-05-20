@@ -56,7 +56,7 @@ kind: url
 name: Delaware
 # https://coronavirus.delaware.gov/
 url: https://myhealthycommunity.dhss.delaware.gov/embed/covid19/
-filter: css:div.c-summary-metric,html2text,strip
+filter: css:div.c-dashboard-card__content-wrapper,html2text,strip
 ---
 kind: url
 name: Florida
@@ -191,8 +191,9 @@ filter: ocr,clean-new-lines
 ---
 kind: url
 name: North Carolina
-url: https://www.ncdhhs.gov/covid-19-case-count-nc
-filter: css:table,html2text
+#dashboard: https://covid19.ncdhhs.gov/dashboard
+url: https://public.tableau.com/views/NCDHHS_COVID-19_Dashboard_Summary/NCDHHS_DASHBOARD_SUMMARY.png?:showVizHome=no
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: North Dakota
