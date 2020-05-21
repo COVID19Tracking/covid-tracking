@@ -141,8 +141,8 @@ filter: css:p:contains("Total approximate number of completed tests"),html2text
 ---
 kind: url
 name: Missouri
-url: https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php
-filter: css:.text-danger,html2text,strip
+url: https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/
+filter: css:div.table-responsive,html2text,strip
 ---
 kind: url
 name: Mississippi
