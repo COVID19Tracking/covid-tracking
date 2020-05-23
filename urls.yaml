@@ -110,7 +110,7 @@ filter: css:p:contains("Current as of") + div.row,html2text
 kind: url
 name: Louisiana
 # http://ldh.la.gov/Coronavirus/
-url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/State_Level_Information_1/FeatureServer/0/query?where=1=1&returnGeometry=false&outFields=*&cacheHint=true
+url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/ArcGIS/rest/services/Combined_COVID_Reporting/FeatureServer/0/query?where=Measure%3D%27Commercial+Tests%27&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Value%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
