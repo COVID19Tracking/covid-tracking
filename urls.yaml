@@ -78,8 +78,8 @@ filter: css:table:contains("Total Cases"),html2text,strip
 kind: url
 name: Iowa
 # https://coronavirus.iowa.gov/pages/case-counts
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://public.domo.com/embed/pages/erJAp',renderType:'html','requestSettings':{'waitInterval':6000}}
-filter: css:pg-layout-frame:contains("Individuals"),html2text,strip
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://public.domo.com/embed/pages/aQVpq',renderType:'png','requestSettings':{'waitInterval':6000},'renderSettings':{'clipRectangle':{'top':100,'width':350,'height':200,'left':50},'viewport':{'width':2048,'height':2048}}}
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: Idaho
