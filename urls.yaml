@@ -19,7 +19,7 @@ filter: css:#contentBody table:contains("Cases"),html2text,strip
 kind: url
 name: Arizona
 # https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home
-url: https://tableau.azdhs.gov/views/UpdatedCOVIDdashboardV2/Story1.png
+url: https://tableau.azdhs.gov/views/COVID-19Summary/Overview2.png
 # filter: sha1sum
 filter: ocr,clean-new-lines
 ---
