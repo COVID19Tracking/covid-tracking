@@ -19,7 +19,7 @@ filter: css:#contentBody table:contains("Cases"),html2text,strip
 kind: url
 name: Arizona
 # https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home
-url: https://tableau.azdhs.gov/views/UpdatedCOVIDdashboardV2/Story1.png
+url: https://tableau.azdhs.gov/views/COVID-19Summary/Overview2.png
 # filter: sha1sum
 filter: ocr,clean-new-lines
 ---
@@ -238,7 +238,7 @@ filter: css:table:contains("Negative tests"),html2text
 kind: url
 name: South Dakota
 # dashboard backing https://doh.sd.gov/news/Coronavirus.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiM2NjNzhmMTEtMzVhNi00ZGJlLTkxYjQtNjkyNDlkMTMyN2IwIiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiNDljYjU2YmQtZjExOC00ZTE3LTg1NDMtNjViNTc0ZTY3ZGZlIiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
 filter: css:div.visualContainer:contains("LAST UPDATED"),html2text,strip
 ---
 kind: url
