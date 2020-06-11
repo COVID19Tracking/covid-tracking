@@ -309,8 +309,8 @@ filter: css:.Blog .post:contains("COVID") .post-content,html2text,strip
 ---
 kind: url
 name: Puerto Rico
-url: http://www.salud.gov.pr/Pages/coronavirus.aspx
-filter: css:table:contains("POSTIVOS"),html2text,strip
+url: https://services5.arcgis.com/klquQoHA0q9zjblu/ArcGIS/rest/services/Datos_Totales_View7/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=T_Muertes_COVID_RD%2CT_Muertes_Combinadas%2CT_Pacientes_Int_Covid%2CT_Vent_Covid%2CT_Serologicos_Pos%2CT_Casos_Unicos%2CT_Molecular_Pos%2CT_Fatalidades%2CT_Hospitalizados&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=html&token=
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Virgin Islands
