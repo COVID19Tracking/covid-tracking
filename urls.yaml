@@ -73,7 +73,7 @@ filter: html2text,strip
 kind: url
 name: Hawaii
 url: https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/
-filter: css:table:contains("Total Cases"),html2text,strip
+filter: css:span:contains("As of"),html2text,strip
 ---
 kind: url
 name: Iowa
