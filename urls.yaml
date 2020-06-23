@@ -266,7 +266,7 @@ filter: ocr,clean-new-lines
 ---
 kind: url
 name: Vermont
-url: https://services1.arcgis.com/BkFxaEFNwHqX3tAw/arcgis/rest/services/county_summary/FeatureServer/0/query?where=1%3D1&outFields=*&cacheHint=true&orderByFields=date+DESC&resultRecordCount=1&f=html
+url: https://services1.arcgis.com/BkFxaEFNwHqX3tAw/ArcGIS/rest/services/VIEW_EPI_DailyCount_PUBLIC/FeatureServer/0/query?resultRecordCount=1&orderByFields=date+DESC&outFields=%2A&where=1%3D1
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
