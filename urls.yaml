@@ -103,8 +103,9 @@ filter: ocr,clean-new-lines,grep:Last updated
 ---
 kind: url
 name: Kentucky
-url: https://chfs.ky.gov/agencies/dph/Pages/covid19.aspx
-filter: css:p:contains("Current as of") + div.row,html2text
+# https://govstatus.egov.com/kycovid19
+url: https://chfs.ky.gov/agencies/dph/covid19/COVID19DailyReport.pdf
+filter: sha1sum
 ---
 kind: url
 name: Louisiana
