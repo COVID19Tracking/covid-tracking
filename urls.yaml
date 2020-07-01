@@ -238,7 +238,7 @@ filter: css:img[src*="Test"]
 kind: url
 name: South Dakota
 # dashboard backing https://doh.sd.gov/news/Coronavirus.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMzFmMGRiNTYtN2M1ZC00MDI1LTkxNzMtOTY0ZTdhNmY0ZTJhIiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMzQ5ZGZlMGEtYjM2NC00ZGQ1LWIwYjItOTMxOWE4YzYyNDA5IiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
 filter: css:div.visualContainer:contains("LAST UPDATED"),html2text,strip
 ---
 kind: url
