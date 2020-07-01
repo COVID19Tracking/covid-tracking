@@ -238,7 +238,7 @@ filter: css:img[src*="Test"]
 kind: url
 name: South Dakota
 # dashboard backing https://doh.sd.gov/news/Coronavirus.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMzFmMGRiNTYtN2M1ZC00MDI1LTkxNzMtOTY0ZTdhNmY0ZTJhIiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMzQ5ZGZlMGEtYjM2NC00ZGQ1LWIwYjItOTMxOWE4YzYyNDA5IiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
 filter: css:div.visualContainer:contains("LAST UPDATED"),html2text,strip
 ---
 kind: url
@@ -249,7 +249,7 @@ filter: sha1sum
 kind: url
 name: Texas
 # dashboard backing https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/0d8bdf9be927459d9cb11b9eaef6101f
-url: https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/DSHS_COVID19_Testing_Service/FeatureServer/2/query?where=TestType%3D%27ViralTests%27+or+TestType%3D%27TotalTests%27+or+TestType%3D%27AntibodyTests%27&objectIds=&time=&resultType=none&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=html&token=
+url: https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/DSHS_COVID19_Testing_Data_Service/FeatureServer/2/query?where=1%3D1&outFields=*
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
