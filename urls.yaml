@@ -25,10 +25,8 @@ filter: ocr,clean-new-lines
 ---
 kind: url
 name: California
-# https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx
-#url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://covid19.ca.gov/',renderType:'html'}
-url: https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx
-filter: css:table:contains("State Officials Announce") tr:nth-child(1),html2text,strip
+url: https://update.covid19.ca.gov/
+filter: css:div.container:contains("California now has"),html2text,strip
 # ---
 # kind: url
 # name: California
