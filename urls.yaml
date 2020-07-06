@@ -129,8 +129,8 @@ filter: css:table:contains("All Reported COVID-19 Tests in Maine"),html2text
 ---
 kind: url
 name: Michigan
-url: https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html
-filter: css:table,html2text,strip
+url: https://www.michigan.gov/coronavirus/
+filter: css:section.stat-container,html2text,strip
 ---
 kind: url
 name: Minnesota
