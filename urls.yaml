@@ -64,7 +64,7 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Georgia
 # https://dph.georgia.gov/covid-19-daily-status-report
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://ga-covid19.ondemand.sas.com/',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://ga-covid19.ondemand.sas.com/',renderType:'html'}
 filter: css:#KPI1,css:div:contains("Testing"),html2text,strip
 ---
 kind: url
@@ -75,7 +75,7 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Iowa
 # https://coronavirus.iowa.gov/pages/case-counts
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://public.domo.com/embed/pages/aQVpq',renderType:'png','requestSettings':{'waitInterval':6000},'renderSettings':{'clipRectangle':{'top':100,'width':350,'height':200,'left':50},'viewport':{'width':2048,'height':2048}}}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://public.domo.com/embed/pages/aQVpq',renderType:'png','requestSettings':{'waitInterval':6000},'renderSettings':{'clipRectangle':{'top':100,'width':350,'height':200,'left':50},'viewport':{'width':2048,'height':2048}}}
 filter: ocr,clean-new-lines
 ---
 kind: url
@@ -179,12 +179,12 @@ url: https://e7p503ngy5.execute-api.us-west-2.amazonaws.com/prod/GetPublicStatew
 kind: url
 name: Nevada
 # https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9',renderType:'html'}
 filter: css:[aria-label*="Test"] title,html2text,strip
 ---
 kind: url
 name: New York
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?:embed=yes%26:toolbar=no',renderType:'jpg','requestSettings':{'waitInterval':4000},'renderSettings':{'clipRectangle':{'width':310,'height':85,'left':1400},'viewport':{'width':2048,'height':2048}}}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?:embed=yes%26:toolbar=no',renderType:'jpg','requestSettings':{'waitInterval':4000},'renderSettings':{'clipRectangle':{'width':310,'height':85,'left':1400},'viewport':{'width':2048,'height':2048}}}
 filter: ocr,clean-new-lines
 ---
 kind: url
@@ -196,7 +196,7 @@ filter: ocr,clean-new-lines
 kind: url
 name: North Dakota
 # https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
-#url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9',renderType:'html'}
+#url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9',renderType:'html'}
 url: https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases
 filter: css:.circle,html2text,strip
 ---
@@ -236,7 +236,7 @@ filter: css:img[src*="Test"]
 kind: url
 name: South Dakota
 # dashboard backing https://doh.sd.gov/news/Coronavirus.aspx
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMzQ5ZGZlMGEtYjM2NC00ZGQ1LWIwYjItOTMxOWE4YzYyNDA5IiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMzQ5ZGZlMGEtYjM2NC00ZGQ1LWIwYjItOTMxOWE4YzYyNDA5IiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
 filter: css:div.visualContainer:contains("LAST UPDATED"),html2text,strip
 ---
 kind: url
@@ -271,7 +271,7 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
-url: https://phantomjscloud.com/api/browser/v2/ak-7r01w-m166n-bm6wx-r4vn0-4m2m9/?request={url:'https://www.doh.wa.gov/Emergencies/Coronavirus',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://www.doh.wa.gov/Emergencies/Coronavirus',renderType:'html'}
 filter: css:table:contains("Positive"),html2text,strip
 ---
 kind: url
