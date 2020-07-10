@@ -96,8 +96,8 @@ url: https://hub.mph.in.gov/datastore/dump/182b6742-edac-442d-8eeb-62f96b17773e?
 kind: url
 name: Kansas
 #state page: https://www.coronavirus.kdheks.gov/
-url: https://public.tableau.com/views/COVID-19TableauVersion2/CaseSummary.png?%3AshowVizHome=no
-filter: ocr,clean-new-lines,grep:Last updated
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://public.tableau.com/views/COVID-19TableauVersion2/COVID-19Overview',renderType:'png','requestSettings':{'waitInterval':2000},'renderSettings':{'clipRectangle':{'top':400,'width':2048,'height':75,'left':0},'viewport':{'width':2048,'height':2048}}}
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: Kentucky
