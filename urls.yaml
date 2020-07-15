@@ -208,9 +208,7 @@ filter: css:.odx-content-section .stats-cards__item,html2text,strip
 kind: url
 name: Oklahoma
 # url: https://coronavirus.health.ok.gov/
-url: https://storage.googleapis.com/ok-covid-gcs-public-download/covid19_cases_summary.pdf
-filter: sha1sum
-ssl_no_verify: true
+url: https://storage.googleapis.com/ok-covid-gcs-public-download/oklahoma_cases_county.csv
 ---
 kind: url
 name: Oregon
