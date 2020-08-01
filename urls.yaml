@@ -185,7 +185,7 @@ filter: css:[aria-label*="Test"] title,html2text,strip
 kind: url
 name: New York
 url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?:embed=yes%26:toolbar=no',renderType:'jpg','requestSettings':{'waitInterval':4000},'renderSettings':{'clipRectangle':{'width':310,'height':85,'left':1400},'viewport':{'width':2048,'height':2048}}}
-filter: ocr,clean-new-lines,grep:^Testing.*as of
+filter: ocr,clean-new-lines,grep:^Testing.* as of
 ---
 kind: url
 name: North Carolina
@@ -245,7 +245,7 @@ filter: sha1sum
 kind: url
 name: Texas
 # dashboard backing https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/0d8bdf9be927459d9cb11b9eaef6101f
-url: https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/DSHS_COVID19_Testing_Data_Service/FeatureServer/2/query?where=1%3D1&outFields=*
+url: https://services5.arcgis.com/ACaLB9ifngzawspq/ArcGIS/rest/services/DSHS_COVID19_TestData_Service/FeatureServer/2/query?where=1%3D1&outFields=TestType,Count_
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
