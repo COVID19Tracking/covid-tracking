@@ -185,7 +185,7 @@ filter: css:[aria-label*="Test"] title,html2text,strip
 kind: url
 name: New York
 url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?:embed=yes%26:toolbar=no',renderType:'jpg','requestSettings':{'waitInterval':4000},'renderSettings':{'clipRectangle':{'width':310,'height':85,'left':1400},'viewport':{'width':2048,'height':2048}}}
-filter: ocr,clean-new-lines
+filter: ocr,clean-new-lines,grep:^Testing.*as of
 ---
 kind: url
 name: North Carolina
