@@ -295,8 +295,8 @@ filter: css:main div[id$="gridContainer"],html2text,strip
 ---
 kind: url
 name: Commonwealth of the Northern Mariana Islands
-url: https://www.chcc.gov.mp/coronavirusinformation.php
-filter: css:.bannerback,html2text
+url: https://services8.arcgis.com/zkkZCub5I6ydvXQj/arcgis/rest/services/Coronavirus_PublicDashboardView/FeatureServer/1/query?where=name+%3D+%27CNMI%27&returnGeometry=false&outFields=totaltests%2Cconfirmedcases%2Crecovered
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Guam
