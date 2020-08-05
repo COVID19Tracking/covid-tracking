@@ -1,6 +1,6 @@
 kind: url
 name: Alaska
-url: https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/COVID_Tests/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=cum_Total&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=cum_Total+desc&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=1&sqlFormat=none&f=html&token=
+url: https://services1.arcgis.com/WzFsmainVTuD5KML/ArcGIS/rest/services/Cumulative_Deceased_Recovered_Active/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22daily_cases%22%7D%5D&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=html&token=
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
