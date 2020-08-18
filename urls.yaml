@@ -270,7 +270,7 @@ kind: url
 name: Washington
 # powerbi dashboard backing https://www.doh.wa.gov/Emergencies/Coronavirus
 url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://www.doh.wa.gov/Emergencies/Coronavirus',renderType:'html'}
-filter: css:table:contains("Positive"),html2text,strip
+filter: css:table:contains("County"),html2text,strip
 ---
 kind: url
 name: Wisconsin
