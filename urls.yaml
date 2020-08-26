@@ -274,9 +274,9 @@ filter: css:table:contains("County"),html2text,strip
 ---
 kind: url
 name: Wisconsin
-# https://www.dhs.wisconsin.gov/outbreaks/index.htm
-url: https://services1.arcgis.com/ISZ89Z51ft1G16OK/arcgis/rest/services/COVID19_WI/FeatureServer/2/query?where=1=1&outFields=NEGATIVE,POSITIVE,DEATHS&returnGeometry=false&useCacheHint=true
-filter: css:.ftrTable,html2text,strip
+# Hospitalization dashboard: https://www.dhs.wisconsin.gov/covid-19/hosp-data.htm
+url: https://bi.wisconsin.gov/t/DHS/views/EMResourceSnapshotPublic/EMResourceSnapshot.png
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: West Virginia
