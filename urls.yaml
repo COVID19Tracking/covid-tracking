@@ -75,7 +75,7 @@ filter: css:.ftrTable,html2text,strip
 kind: url
 name: Iowa
 # https://coronavirus.iowa.gov/pages/case-counts
-url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://public.domo.com/embed/pages/aQVpq',renderType:'png','requestSettings':{'waitInterval':6000},'renderSettings':{'clipRectangle':{'top':100,'width':350,'height':200,'left':50},'viewport':{'width':2048,'height':2048}}}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://public.domo.com/embed/pages/aQVpq',renderType:'png','requestSettings':{'waitInterval':6000},'renderSettings':{'clipRectangle':{'top':380,'width':500,'height':150,'left':10},'viewport':{'width':1024,'height':1024}}}
 filter: ocr,clean-new-lines
 ---
 kind: url
@@ -274,9 +274,9 @@ filter: css:table:contains("County"),html2text,strip
 ---
 kind: url
 name: Wisconsin
-# https://www.dhs.wisconsin.gov/outbreaks/index.htm
-url: https://services1.arcgis.com/ISZ89Z51ft1G16OK/arcgis/rest/services/COVID19_WI/FeatureServer/2/query?where=1=1&outFields=NEGATIVE,POSITIVE,DEATHS&returnGeometry=false&useCacheHint=true
-filter: css:.ftrTable,html2text,strip
+# Hospitalization dashboard: https://www.dhs.wisconsin.gov/covid-19/hosp-data.htm
+url: https://bi.wisconsin.gov/t/DHS/views/EMResourceSnapshotPublic/EMResourceSnapshot.png
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: West Virginia
