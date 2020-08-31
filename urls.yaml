@@ -254,11 +254,9 @@ filter: css:#row,html2text,strip
 ---
 kind: url
 name: Virginia
-# http://www.vdh.virginia.gov/coronavirus/
-# https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard?:embed=yes&:display_count=yes&:showVizHome=no&:toolbar=no
-url: https://public.tableau.com/views/VirginiaCOVID-19Dashboard/VirginiaCOVID-19Dashboard.png?:showVizHome=no
-# filter: sha1sum
-filter: ocr,clean-new-lines
+# https://www.vdh.virginia.gov/coronavirus/covid-19-in-virginia/
+url: https://vdhpublicdata.vdh.virginia.gov/views/VirginiaCOVID-19Dashboard-Summary/VirginiaCOVID-19Dashboard.csv
+#filter: ocr,clean-new-lines
 ---
 kind: url
 name: Vermont
