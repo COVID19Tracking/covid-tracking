@@ -168,9 +168,8 @@ filter: css:table,html2text,strip
 ---
 kind: url
 name: New Jersey
-# site backing https://covid19.nj.gov
-url: https://www.nj.gov/health/
-filter: css:.slickCarousel-DOH .card-body table,html2text
+url: https://services7.arcgis.com/Z0rixLlManVefxqY/arcgis/rest/services/survey123_cb9a6e9a53ae45f6b9509a23ecdf7bcf/FeatureServer/0/query?where=1%3D1&outFields=*&orderByFields=_date+desc&&resultRecordCount=1
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: New Mexico
