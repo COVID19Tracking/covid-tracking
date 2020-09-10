@@ -194,10 +194,8 @@ filter: ocr,clean-new-lines
 ---
 kind: url
 name: North Dakota
-# https://app.powerbigov.us/view?r=eyJrIjoiZThmNWQwYWYtOWY3MC00OTZjLWJmNzQtYWE0OTJmYjIzZWM3IiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9
-#url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiYjJhZjUwM2QtZDIwZi00MmU3LTljZjEtZjgyMzIzZDVmMmQxIiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9&pageName=ReportSectionf5bbf68127089e2bd8ea',renderType:'html'}
-url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https%3A%2F%2Fapp.powerbigov.us%2Fview%3Fr%3DeyJrIjoiYjJhZjUwM2QtZDIwZi00MmU3LTljZjEtZjgyMzIzZDVmMmQxIiwidCI6IjJkZWEwNDY0LWRhNTEtNGE4OC1iYWUyLWIzZGI5NGJjMGM1NCJ9%26pageName%3DReportSectionf5bbf68127089e2bd8ea',renderType:'html'}
-filter: css:svg[aria-label*="Total Tests Completed"] title
+# https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases
+url: https://static.dwcdn.net/data/yuhr0.csv
 ---
 kind: url
 name: Ohio
