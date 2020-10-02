@@ -26,7 +26,7 @@ filter: ocr,clean-new-lines
 kind: url
 name: California
 url: https://update.covid19.ca.gov/
-filter: css:div.container:contains("California now has"),html2text,strip
+filter: css:div.container:contains("The number of COVID-related deaths"),html2text,strip
 # ---
 # kind: url
 # name: California
@@ -225,8 +225,8 @@ filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: South Carolina
-url: https://scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19/sc-testing-data-projections-covid-19
-filter: css:img[src*="Test"]
+url: https://scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19
+filter: css:main div[id$="table-block"],html2text,strip
 ---
 kind: url
 name: South Dakota
