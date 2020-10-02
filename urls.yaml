@@ -26,7 +26,7 @@ filter: ocr,clean-new-lines
 kind: url
 name: California
 url: https://update.covid19.ca.gov/
-filter: css:div.container:contains("California now has"),html2text,strip
+filter: css:div.container:contains("California has"),html2text,strip
 # ---
 # kind: url
 # name: California
