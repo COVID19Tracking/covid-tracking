@@ -13,8 +13,8 @@ filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Arkansas
-url: https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus
-filter: css:#contentBody table:contains("Cases"),html2text,strip
+url: https://services.arcgis.com/PwY9ZuZRDiI5nXUB/arcgis/rest/services/UPDATED_ADH_COVID19_COUNTY_METRICS/FeatureServer/0/query?where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22total_tests%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: Arizona
