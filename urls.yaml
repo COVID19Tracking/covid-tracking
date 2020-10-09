@@ -214,7 +214,7 @@ filter: css:table:contains("Total persons"),html2text
 ---
 kind: url
 name: Pennsylvania
-url: https://services2.arcgis.com/xtuWQvb2YQnp0z3F/ArcGIS/rest/services/Pennsylvania_Public_COVID19_Dashboard_Data/FeatureServer/0/query?where=1%3D1&returnGeometry=false&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Negative%22%7D%5D
+url: https://services1.arcgis.com/Nifc7wlHaBPig3Q3/ArcGIS/rest/services/Covid_Cases_County/FeatureServer/0/query?where=county%3D%27Pennsylvania%27&objectIds=&time=&resultType=none&outFields=cases&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B"statisticType"%3A"sum"%2C"onStatisticField"%3A"cases"%2C"outStatisticFieldName"%3A"value"%7D%5D&having=&resultOffset=&resultRecordCount=&sqlFormat=standard&f=html&token=
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
