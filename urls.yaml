@@ -139,7 +139,7 @@ filter: css:p:contains("Total approximate number of completed tests"),html2text
 ---
 kind: url
 name: Missouri
-url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://public.tableau.com/views/COVID-19inMissouri/COVID-19inMissouri',renderType:'png','requestSettings':{'waitInterval':2000},'renderSettings':{'clipRectangle':{'top':290,'width':1024,'height':90,'left':0},'viewport':{'width':2048,'height':2048}}}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://public.tableau.com/views/COVID-19inMissouri/COVID-19inMissouri',renderType:'png','requestSettings':{'waitInterval':2000},'renderSettings':{'clipRectangle':{'top':290,'width':260,'height':70,'left':500},'viewport':{'width':2048,'height':2048}}}
 filter: ocr,clean-new-lines
 ---
 kind: url
