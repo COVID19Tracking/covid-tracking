@@ -135,7 +135,7 @@ filter: css:section.stat-container,html2text,strip
 kind: url
 name: Minnesota
 url: https://www.health.state.mn.us/diseases/coronavirus/situation.html
-filter: css:p:contains("Total approximate number of completed tests"),html2text
+filter: element-by-id:testtotal,html2text,strip
 ---
 kind: url
 name: Missouri
