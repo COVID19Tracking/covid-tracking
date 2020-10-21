@@ -69,7 +69,7 @@ filter: css:#KPI1,css:div:contains("Testing"),html2text,strip
 ---
 kind: url
 name: Hawaii
-url: https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/covid_county_counts/FeatureServer/0/query?where=1%3D1&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22cases%22%7D%5D
+url: https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/covid_county_counts_v02/FeatureServer/0/query?where=1%3D1&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22cases%22%7D%5D
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
@@ -231,8 +231,8 @@ filter: css:main div[id$="table-block"],html2text,strip
 kind: url
 name: South Dakota
 # dashboard backing https://doh.sd.gov/news/Coronavirus.aspx
-url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiYjA3MzAwMTYtMmYyYi00M2VmLTljM2EtYjk4NTdmYjljYjM4IiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
-filter: css:div.visualContainer:contains("Total Tests"),html2text,strip
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiZWUyZThlOTQtNTY4NC00M2FiLWJjYzQtM2NkNTExYjc0ODVhIiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
+filter: css:div.visualContainer:contains("Total Tests"),grep:".*Total Tests.*",html2text,strip
 ---
 kind: url
 name: Tennessee
