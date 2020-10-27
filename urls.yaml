@@ -177,9 +177,8 @@ url: https://e7p503ngy5.execute-api.us-west-2.amazonaws.com/prod/GetPublicStatew
 ---
 kind: url
 name: Nevada
-# https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9
-url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9',renderType:'html'}
-filter: css:[aria-label*="Test"] title,html2text,strip
+url: https://phantomjscloud.com/api/browser/v2/ak-wgnmg-zj6vm-v5q3q-xktah-xvya3/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9',renderType:'jpg','requestSettings':{'waitInterval':4000},'renderSettings':{'clipRectangle':{'width':300,'height':85,'left':1360,'top':780},'viewport':{'width':2048,'height':2048}}}
+filter: ocr,clean-new-lines
 ---
 kind: url
 name: New York
