@@ -285,7 +285,7 @@ filter: css:.et_pb_text_inner:contains("Wyoming Updates"),html2text
 kind: url
 name: American Samoa
 url: https://www.americansamoa.gov/covid-19-advisories
-filter: css:main div[id$="gridContainer"],html2text,strip
+filter: css:main div[id$="Containerc29iz"],html2text,strip
 ---
 kind: url
 name: Commonwealth of the Northern Mariana Islands
