@@ -224,8 +224,8 @@ filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: South Carolina
-url: https://scdhec.gov/infectious-diseases/viruses/coronavirus-disease-2019-covid-19
-filter: css:main div[id$="table-block"],html2text,strip
+url: https://services2.arcgis.com/XZg2efAbaieYAXmu/arcgis/rest/services/COVID19_SharingView/FeatureServer/0/query?&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B"statisticType"%3A"sum"%2C"onStatisticField"%3A"Confirmed"%2C"outStatisticFieldName"%3A"value"%7D%5D&outSR=102100&resultType=standard&cacheHint=true
+filter: css:.ftrTable,html2text,strip
 ---
 kind: url
 name: South Dakota
