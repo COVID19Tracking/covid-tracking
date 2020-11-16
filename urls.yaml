@@ -108,7 +108,7 @@ filter: sha1sum
 kind: url
 name: Louisiana
 # http://ldh.la.gov/Coronavirus/
-url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/ArcGIS/rest/services/Combined_COVID_Reporting/FeatureServer/0/query?where=Measure%3D%27Commercial+Tests%27&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22Value%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D
+url: https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/test_this_sheet/FeatureServer/0/query?&where=Measure%3D%27Total%20Tests%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B"statisticType"%3A"sum"%2C"onStatisticField"%3A"Value"%2C"outStatisticFieldName"%3A"value"%7D%5D&outSR=102100&resultType=standard&cacheHint=true
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
