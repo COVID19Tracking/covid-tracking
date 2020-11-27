@@ -230,7 +230,7 @@ filter: css:main div[id$="table-block"],html2text,strip
 kind: url
 name: South Dakota
 # dashboard backing https://doh.sd.gov/news/Coronavirus.aspx
-url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiZWUyZThlOTQtNTY4NC00M2FiLWJjYzQtM2NkNTExYjc0ODVhIiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html'}
+url: https://phantomjscloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/?request={url:'https://app.powerbigov.us/view?r=eyJrIjoiZTZjZTExZDAtYWYyYS00MjJkLThhY2YtOTdhY2RkM2M4NTNmIiwidCI6IjcwYWY1NDdjLTY5YWItNDE2ZC1iNGE2LTU0M2I1Y2U1MmI5OSJ9',renderType:'html','requestSettings':{'waitInterval':8000}}
 filter: css:div.visualContainer:contains("Total Tests"),grep:".*Total Tests.*",html2text,strip
 ---
 kind: url
