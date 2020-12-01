@@ -209,7 +209,7 @@ url: https://storage.googleapis.com/ok-covid-gcs-public-download/oklahoma_cases_
 kind: url
 name: Oregon
 url: https://govstatus.egov.com/OR-OHA-COVID-19
-filter: css:table:contains("Total tested"),html2text
+filter: css:table:contains("Total tests"),html2text
 ---
 kind: url
 name: Pennsylvania
