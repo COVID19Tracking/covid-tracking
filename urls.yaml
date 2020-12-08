@@ -102,8 +102,8 @@ filter: ocr,clean-new-lines
 kind: url
 name: Kentucky
 # https://govstatus.egov.com/kycovid19
-url: https://chfs.ky.gov/agencies/dph/covid19/COVID19DailyReport.pdf
-filter: sha1sum
+url: https://govstatus.egov.com/kycovid19
+filter: element-by-class:probable,html2text,strip
 ---
 kind: url
 name: Louisiana
