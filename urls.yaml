@@ -69,7 +69,7 @@ filter: css:#KPI1,css:div:contains("Testing"),html2text,strip
 ---
 kind: url
 name: Hawaii
-url: https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/covid_island_counts_v01/FeatureServer/0/query?where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B"statisticType"%3A"sum"%2C"onStatisticField"%3A"cases"%2C"outStatisticFieldName"%3A"value"%7D%5D&outSR=102100&resultType=standard&cacheHint=true
+url: https://services9.arcgis.com/aKxrz4vDVjfUwBWJ/arcgis/rest/services/HIEMA_TEST_DATA_PUBLIC_LATEST/FeatureServer/0/query?&where=1%3D1&returnGeometry=false&outFields=*&resultOffset=4&resultType=standard&cacheHint=true
 filter: css:.ftrTable,html2text,strip
 ---
 kind: url
