@@ -187,9 +187,8 @@ filter: ocr,clean-new-lines,grep:^Testing.* as of
 ---
 kind: url
 name: North Carolina
-#dashboard: https://covid19.ncdhhs.gov/dashboard
-url: https://public.tableau.com/views/NCDHHS_COVID-19_Dashboard_Summary/NCDHHS_DASHBOARD_SUMMARY.png?:showVizHome=no
-filter: ocr,clean-new-lines
+url: https://covid19.ncdhhs.gov
+filter: css:span:contains("Completed Tests"),html2text
 ---
 kind: url
 name: North Dakota
