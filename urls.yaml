@@ -282,11 +282,6 @@ url: https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/di
 filter: css:.et_pb_text_inner:contains("Wyoming Updates"),html2text
 ---
 kind: url
-name: American Samoa
-url: https://4307e575-0744-4fa0-bcca-68011612de53.filesusr.com/ugd/4bfff9_209244296662496c949e0f42d4749b57.pdf
-filter: sha1sum
----
-kind: url
 name: Commonwealth of the Northern Mariana Islands
 url: https://services8.arcgis.com/zkkZCub5I6ydvXQj/arcgis/rest/services/Coronavirus_PublicDashboardView/FeatureServer/1/query?where=name+%3D+%27CNMI%27&returnGeometry=false&outFields=totaltests%2Cconfirmedcases%2Crecovered
 filter: css:.ftrTable,html2text,strip
