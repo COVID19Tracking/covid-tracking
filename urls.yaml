@@ -192,8 +192,8 @@ filter: css:span:contains("Completed Tests"),html2text
 ---
 kind: url
 name: North Dakota
-# https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases
-url: https://static.dwcdn.net/data/yuhr0.csv
+url: https://www.health.nd.gov/sites/www/files/documents/Files/MSS/coronavirus/charts-data/PublicUseData.csv
+filter: sha1sum
 ---
 kind: url
 name: Ohio
