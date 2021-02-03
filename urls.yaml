@@ -251,7 +251,7 @@ filter: css:#row,html2text,strip
 kind: url
 name: Virginia
 # https://www.vdh.virginia.gov/coronavirus/covid-19-in-virginia/
-url: https://vdhpublicdata.vdh.virginia.gov/views/VirginiaCOVID-19Dashboard-Summary/VirginiaCOVID-19Dashboard.csv
+url: https://data.virginia.gov/resource/3u5k-c2gr.json?%24query=select+sum%28number_of_pcr_testing%29+as+pcr_testing%2C+sum%28number_of_positive_pcr_testing%29+as+pos_pcr_testing%2C+sum%28number_of_antibody_testing_encounters%29+as+antibody_total%2C+sum%28number_of_positive_antibody_testing_encounters%29+as+antibody_pos%2C+sum%28number_of_positive_antigen_testing_encounters%29+as+antigen_pos%2C+sum%28number_of_antigen_testing_encounters%29+as+antigen_total
 #filter: ocr,clean-new-lines
 ---
 kind: url
