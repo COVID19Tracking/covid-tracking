@@ -188,7 +188,7 @@ filter: ocr,clean-new-lines,grep:^Testing.* as of
 kind: url
 name: North Carolina
 url: https://covid19.ncdhhs.gov
-filter: css:span:contains("Completed Tests"),html2text
+filter: css:span:contains("Cases"),html2text,strip
 ---
 kind: url
 name: North Dakota
